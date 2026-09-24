@@ -1,0 +1,73 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Lint, Typecheck, Test & Build (Node 22 LTS)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22 LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run static typecheck (tsc --noEmit)
+        run: npm run typecheck
+
+      - name: Run linter (eslint .)
+        run: npm run lint
+
+      - name: Run automated test suite (vitest run)
+        run: npx vitest run
+
+      - name: Verify Next.js production build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_APP_URL: "http://localhost:3000"
+          AI_DEFAULT_PROVIDER: "google"
+          GOOGLE_GENERATIVE_AI_API_KEY: "dummy_gemini_ci_key"
+          NEXT_PUBLIC_SUPABASE_URL: "https://example.supabase.co"
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: "dummy_anon_key"
+          SUPABASE_SERVICE_ROLE_KEY: "dummy_service_role_key"
+          NEXT_PUBLIC_ENABLE_AI: "true"
+          NEXT_PUBLIC_ENABLE_CONTACT: "true"
+          NEXT_PUBLIC_ENABLE_AUTH: "false"
+          NEXT_PUBLIC_ENABLE_WAITLIST: "false"
+          NEXT_PUBLIC_ENABLE_PAYMENTS: "false"
+          NEXT_PUBLIC_ENABLE_ADMIN: "false"
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run E2E Smoke Tests
+        run: npm run e2e
+        env:
+          NEXT_PUBLIC_APP_URL: "http://127.0.0.1:3000"
+          AI_DEFAULT_PROVIDER: "google"
+          GOOGLE_GENERATIVE_AI_API_KEY: "dummy_gemini_ci_key"
+          NEXT_PUBLIC_SUPABASE_URL: "https://example.supabase.co"
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: "dummy_anon_key"
+          SUPABASE_SERVICE_ROLE_KEY: "dummy_service_role_key"
+          NEXT_PUBLIC_ENABLE_AI: "true"
+          NEXT_PUBLIC_ENABLE_CONTACT: "true"
+          NEXT_PUBLIC_ENABLE_AUTH: "false"
+          NEXT_PUBLIC_ENABLE_WAITLIST: "false"
+          NEXT_PUBLIC_ENABLE_PAYMENTS: "false"
+          NEXT_PUBLIC_ENABLE_ADMIN: "false"

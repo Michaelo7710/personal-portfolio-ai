@@ -1,0 +1,80 @@
+---
+id: "wallet-app"
+slug: "wallet-app"
+title: "GreenPay E-Wallet"
+tagline: "Aplikasi Dompet Digital Offline-First & Resi Finansial Kanonikal"
+category: "Fintech & Mobile Architecture"
+featuredBadge: "Flagship Production System"
+date: "2026-09-20"
+published: true
+techStack:
+  - "React Native"
+  - "TypeScript"
+  - "Clean Architecture"
+  - "SQLite"
+  - "Jest (34 Suites / 313 Tests)"
+metrics:
+  - label: "Ketahanan Jaringan"
+    value: "100% Offline-First"
+  - label: "Cakupan Tes"
+    value: "313 Tests Pass"
+  - label: "UI Guard"
+    value: "0 Raw Alert"
+starSummary:
+  situation: "Aplikasi dompet digital membutuhkan perlindungan transaksi moneter tanpa toleransi kegagalan saldo atau kebocoran data pengguna saat offline."
+  architecture: "Sentralisasi Unified Feedback Service, perlindungan Screen Capture Guard di root level, sanitasi data rekening (UU PDP), dan sinkronisasi resi kanonikal."
+  impact: "100% bebas dari crash dialog mentah, 0 race condition transaksi, dan lolos uji regresi otomatis 34 test suite beruntun."
+star:
+  situation: "Pada ekosistem fintech modern di Indonesia, stabilitas koneksi internet seluler di lapangan kerap mengalami fluktuasi tajam (spotty coverage). Ketika pengguna melakukan transaksi transfer dana atau pembayaran QRIS di area minim sinyal, kegagalan penanganan jaringan dapat mengakibatkan double-spending, saldo gantung, atau crash mendadak akibat unhandled promise rejection. Selain itu, terdapat regulasi ketat perlindungan privasi finansial (UU PDP No. 27/2022) dan pencegahan pencurian kredensial melalui aplikasi perekam layar jahat."
+  task: "Membangun sistem dompet digital kelas produksi dengan 3-Tier Clean Architecture yang menjamin ketahanan mutlak transaksi offline-first, mengeliminasi race condition saldo secara deterministik, menerapkan sanitasi data sensitif di seluruh layer presentasi, serta mencegah kebocoran informasi melalui screen capture."
+  action: "1. Mengimplementasikan Screen Capture Guard di root level aplikasi untuk memblokir rekaman layar dan screenshot pada layar pembayaran serta detail kartu/rekening. 2. Membangun Sanitasi Data Otomatis berstandar UU PDP yang memask nomor telepon dan rekening (e.g. 0812-****-8899) pada seluruh tampilan UI dan event logging. 3. Menerapkan Transaction Lock Engine dengan UUIDv4 Idempotency Key dan antrean mutasi lokal SQLite untuk mengunci saldo secara atomik. 4. Merancang Canonical Digital Receipt Engine dengan hash verifikasi server dan sinkronisasi background otomatis saat koneksi internet pulih. 5. Menyentralisasi Unified Feedback Service untuk menghapus seluruh dialog Alert.alert mentah dan menggantinya dengan bottom-sheet informatif yang ramah screen reader."
+  result: "Sistem berhasil mencapai 100% ketahanan offline-first tanpa satu pun insiden race condition atau saldo gantung. Seluruh modul dilindungi oleh 34 test suites (313 unit & integration tests) dengan status passing 100%. Tidak ada kebocoran data sensitif pada log sistem, dan pengalaman pengguna tetap konsisten pada 60 FPS."
+---
+
+# GreenPay E-Wallet: Arsitektur Finansial Resilien & Kepatuhan UU PDP
+
+GreenPay E-Wallet adalah solusi dompet digital berstandar produksi yang dirancang untuk mengatasi tantangan kritis keandalan transaksi moneter di lingkungan jaringan seluler yang tidak stabil.
+
+---
+
+### 1. Situation (Konteks & Akar Masalah)
+Aplikasi dompet digital menghadapi ekspektasi nol toleransi terhadap kesalahan data saldo (*zero-tolerance monetary inconsistency*). Di Indonesia, kondisi jaringan seluler sering mengalami putus-sambung mendadak (*flaky network*). Ketika pengguna melakukan mutasi saldo saat koneksi terputus:
+- Tanpa arsitektur offline-first yang kuat, aplikasi rentan melakukan pengiriman berulang (*duplicate transaction/double spending*).
+- Kegagalan transaksi kerap memicu dialog `Alert.alert` mentah yang membingungkan pengguna dan merusak reputasi produk.
+- Informasi perbankan dan nomor rekening rentan bocor ke log klien atau terekam oleh aplikasi pengintai (*screen recorders*), melanggar amanat **UU Pelindungan Data Pribadi (UU PDP No. 27/2022)**.
+
+---
+
+### 2. Task (Tantangan & Batasan Arsitektur)
+- **Clean Architecture 3-Tier:** Memisahkan Domain (Entities & Business Rules), Use Cases (Interactors & Idempotent Commands), dan Presentation/Data Source Layer.
+- **Offline-First Transaction Queue:** Setiap aksi mutasi saldo dicatat ke SQLite lokal dengan status `PENDING`, dilengkapi UUIDv4 Idempotency Key sebelum dikirim ke backend.
+- **UU PDP & Anti-Capture Guard:** Masking seluruh data PII dan pencegahan screen capture pada level native window.
+- **Verifikasi Kualitas:** Wajib lulus pengujian unit dan integrasi otomatis tanpa regresi.
+
+---
+
+### 3. Action (Kontribusi Rekayasa Teknis Nyata)
+
+#### A. Screen Capture Guard & Proteksi Native
+Menghubungkan window manager native untuk mematikan kemampuan screenshot dan screen recording pada layar saldo dan transfer, melindungi PIN dan informasi sensitif pengguna dari eksploitasi pihak ketiga.
+
+#### B. Sanitizer Data Finansial (UU PDP)
+Membangun utilitas masking data deterministik:
+- Nomor telepon: `0812-****-7890`
+- Nomor rekening / VA: `8801-****-****-1234`
+- Masking diterapkan secara otomatis sebelum data menyentuh rendering engine atau crash reporter.
+
+#### C. Local Mutex & Idempotency Key Engine
+Setiap mutasi saldo diproses melalui atomic queue dengan idempotency key UUIDv4. Jika transaksi terputus di tengah jalan, backend memverifikasi token yang sama sehingga saldo tidak pernah terpotong dua kali.
+
+#### D. Sentralisasi Unified Feedback Service
+Mengganti seluruh dialog alert bawaan OS dengan komponen feedback kustom berbasis status (Success, Error, Network Warning) yang mendukung aksesibilitas WCAG 2.1 AA dan animasi mikro yang halus.
+
+---
+
+### 4. Results & Metrics (Dampak Terukur)
+
+- **100% Offline-First Resilience:** Transaksi dapat diinisiasi dalam kondisi offline dan disinkronkan secara mulus saat koneksi pulih.
+- **313 Automated Tests:** 34 test suite Jest mencakup use cases, repositories, SQLite mapper, dan screen sanitizers dengan hasil 100% hijau.
+- **0 Race Condition:** Terverifikasi bebas dari tabrakan transaksi simultan dan double-spending.
+- **0 Raw Alert Crash:** Seluruh alur kegagalan ditangani secara elegan via Unified Feedback Service.
