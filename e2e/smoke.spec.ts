@@ -13,7 +13,7 @@ test("homepage renders the primary engineer hero and recruiter value proposition
   ).toBeVisible();
 
   // Check Navigation and CTA
-  await expect(page.getByRole("link", { name: /Jelajahi Portofolio/i })).toBeVisible();
+  await expect(page.getByRole("link", { name: /Studi Kasus Proyek/i })).toBeVisible();
 });
 
 test("homepage displays real-world project showcase and STAR case studies", async ({ page }) => {
