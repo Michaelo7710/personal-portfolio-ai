@@ -9,7 +9,7 @@ test("homepage renders the primary engineer hero and recruiter value proposition
   ).toBeVisible();
 
   await expect(
-    page.getByText("Muhammad Luthfi", { exact: false }),
+    page.getByText("Muhammad Luthfi").first(),
   ).toBeVisible();
 
   // Check Navigation and CTA
@@ -28,5 +28,5 @@ test("homepage renders multimodal ATS CV Generator section", async ({ page }) =>
   await page.goto("/");
 
   // Verify ATS Generator Teaser / Section
-  await expect(page.getByText(/ATS-Friendly CV Generator/i)).toBeVisible();
+  await expect(page.getByText(/ATS-Friendly Resume Tailoring/i)).toBeVisible();
 });
