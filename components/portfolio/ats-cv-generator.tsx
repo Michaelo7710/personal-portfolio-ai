@@ -23,6 +23,7 @@ import {
   Zap,
 } from "lucide-react";
 import type { AtsCvGenerationResult } from "@/lib/ai/ats-prompt";
+import { siteConfig } from "@/config/site";
 
 const SAMPLE_JOB_OFFERS = {
   mobile: {
@@ -170,7 +171,7 @@ export function AtsCvGenerator() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `CV-Muhammad-Luthfi-ATS.${type}`;
+    a.download = `CV-${siteConfig.author.name.replace(/\s+/g, "-")}-ATS.${type}`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

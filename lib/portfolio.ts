@@ -63,6 +63,7 @@ export const staticCaseStudiesFallback: ProjectCaseStudyMeta[] = [
     featuredBadge: "Flagship Production System",
     date: "2026-09-20",
     published: true,
+    githubUrl: "https://github.com/Michaelo7710/greenpay-showcase",
     techStack: [
       "React Native",
       "TypeScript",

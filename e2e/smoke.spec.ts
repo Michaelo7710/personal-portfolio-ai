@@ -9,7 +9,7 @@ test("homepage renders the primary engineer hero and recruiter value proposition
   ).toBeVisible();
 
   await expect(
-    page.getByText("Muhammad Luthfi").first(),
+    page.getByText("Mikail Nurwahid").first(),
   ).toBeVisible();
 
   // Check Navigation and CTA

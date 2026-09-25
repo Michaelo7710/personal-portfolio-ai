@@ -74,7 +74,7 @@ describe("app/api/ai/cv-generate/route", () => {
     const body = await response.json();
     expect(body.success).toBe(true);
     expect(body.targetRole).toBe("Senior React Native Engineer");
-    expect(body.markdown).toContain("Muhammad Luthfi");
+    expect(body.markdown).toContain("Mikail Nurwahid");
     expect(body.markdown).toContain("GreenPay E-Wallet");
     expect(body.atsScore).toBeGreaterThanOrEqual(85);
     expect(response.headers.get("X-RateLimit-Limit")).toBe("10");
@@ -98,14 +98,14 @@ describe("app/api/ai/cv-generate/route", () => {
     expect(response.status).toBe(200);
     const body = await response.json();
     expect(body.success).toBe(true);
-    expect(body.markdown).toContain("Muhammad Luthfi");
+    expect(body.markdown).toContain("Mikail Nurwahid");
   });
 
   it("invokes Gemini Multimodal Vision when Google provider is configured", async () => {
     isProviderConfiguredMock.mockReturnValue(true);
     getModelMock.mockReturnValue({ modelId: "gemini-1.5-flash" });
     generateTextMock.mockResolvedValue({
-      text: "# Muhammad Luthfi\n**Senior AI Engineer**\n\n## PROFESSIONAL SUMMARY\nTailored by Gemini 1.5 Flash Vision.\n\n## FEATURED SYSTEMS\n* GreenPay E-Wallet",
+      text: "# Mikail Nurwahid\n**Junior Full-Stack Mobile & Systems Engineer**\n\n## PROFESSIONAL SUMMARY\nTailored by Gemini 1.5 Flash Vision.\n\n## FEATURED SYSTEMS\n* GreenPay E-Wallet",
     });
 
     const { POST } = await import("@/app/api/ai/cv-generate/route");

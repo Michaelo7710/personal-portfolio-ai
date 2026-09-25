@@ -1,4 +1,4 @@
-# ⚡ Muhammad Luthfi — Fullstack AI Systems Engineer Portfolio & Multimodal ATS CV Engine
+# ⚡ Mikail Nurwahid — Junior Full-Stack Mobile & Systems Engineer Portfolio & Multimodal ATS CV Engine
 
 [![Next.js 16](https://img.shields.io/badge/Next.js-16_App_Router-black?logo=next.js&style=for-the-badge)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict_Mode-3178C6?logo=typescript&logoColor=white&style=for-the-badge)](https://www.typescriptlang.org/)
@@ -227,13 +227,15 @@ Unlike typical AI portfolio demos that generate arbitrary, fictional resume bull
 
 ## 👨‍💻 Engineering Leadership & Contact
 
-**Muhammad Luthfi**  
-*Senior Fullstack Mobile & AI Systems Engineer*
+**Mikail Nurwahid**  
+*Junior Full-Stack Mobile & Systems Engineer (React Native & Node.js)*
 
 - 🌐 **Portfolio & Live Demo:** [https://github.com/Michaelo7710/personal-portfolio-ai](https://github.com/Michaelo7710/personal-portfolio-ai)
-- 🐙 **GitHub:** [@Michaelo7710](https://github.com/Michaelo7710)
-- 💼 **Primary Ecosystem Repository:** [Michaelo7710/e-wallet-monorepo](https://github.com/Michaelo7710/e-wallet-monorepo)
-- 📧 **Inquiries:** `mikailnurwahid01@gmail.com`
+- 🐙 **GitHub Profile:** [@Michaelo7710](https://github.com/Michaelo7710)
+- 💼 **Flagship Showroom Repository:** [Michaelo7710/greenpay-showcase](https://github.com/Michaelo7710/greenpay-showcase)
+- 📧 **Inquiries & Email:** [mikailnurwahid01@gmail.com](mailto:mikailnurwahid01@gmail.com)
+- 📱 **Phone / WhatsApp:** +62 838-6004-996
+- 📍 **Location:** Jawa Barat, Indonesia
 
 ---
 

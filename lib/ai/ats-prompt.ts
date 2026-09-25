@@ -168,7 +168,7 @@ Pragmatic and results-driven Senior Software Engineer specializing in **Clean Ar
 * **Architectural Action:** Engineered 3-Tier Clean Architecture separating Domain, Use Cases, and Local SQLite Storage. Implemented native Screen Capture Guard at root window level to block sensitive card/PIN recording.
 * **Security & Regulatory Compliance:** Built automated deterministic sanitization conforming to UU PDP No. 27/2022, masking account and mobile numbers across UI and telemetry logs.
 * **Transaction Locking:** Deployed atomic mutex queue with UUIDv4 idempotency keys, eliminating balance race conditions.
-* **Quantifiable Impact:** Achieved **100% Offline-First resilience**; verified with **313 automated tests (34 test suites)** passing at 100%; eliminated 100% of raw alert dialog crashes.
+* **Quantifiable Impact:** Achieved **100% Offline-First resilience**; verified with **454 automated unit & integration tests (100% CI pass rate)**; eliminated 100% of raw alert dialog crashes.
 
 ### QuranApp (Digital Mushaf) — Modern Accessibility & Cultural Tech
 *Lead Frontend & Accessibility Engineer*

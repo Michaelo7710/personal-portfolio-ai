@@ -51,7 +51,7 @@ describe("lib/ai/ats-prompt", () => {
     expect(result.markdown).toContain("GreenPay E-Wallet");
     expect(result.markdown).toContain("QuranApp");
     expect(result.markdown).toContain("Sensei Edu-Sim Suite");
-    expect(result.markdown).toContain("313 automated tests");
+    expect(result.markdown).toContain("454 automated unit & integration tests");
     expect(result.markdown).toContain("WCAG 2.1 AA");
     expect(result.markdown).toContain("60 FPS");
   });
