@@ -11,8 +11,8 @@ import { getOrderSummary } from "@/lib/data/payments";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Pesanan Berhasil — KilatKoding",
-  description: "Konfirmasi pesanan KilatKoding dan langkah berikutnya setelah pembelian.",
+  title: "Pesanan Berhasil — Mikail Nurwahid Portfolio",
+  description: "Konfirmasi pesanan dan langkah berikutnya.",
   noIndex: true,
 });
 
@@ -33,10 +33,10 @@ const nextSteps = [
   },
   {
     icon: MessageCircle,
-    title: "Gabung Discord",
-    desc: "Komunitas developer KilatKoding — tanya jawab, berbagi progress, dan networking.",
-    href: "https://discord.gg/kilatkoding",
-    cta: "Join Discord",
+    title: "Hubungi Developer",
+    desc: "Diskusi teknis dan tanya jawab langsung seputar implementasi.",
+    href: "/contact",
+    cta: "Kontak Kami",
   },
 ];
 

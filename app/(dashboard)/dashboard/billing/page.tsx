@@ -34,8 +34,8 @@ import { formatDateInJakarta } from "@/lib/format/date";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Billing — KilatKoding",
-  description: "Kelola paket aktif dan mulai pembayaran KilatKoding kamu.",
+  title: "Billing — Mikail Nurwahid Portfolio",
+  description: "Kelola paket aktif dan riwayat showcase kamu.",
   path: "/dashboard/billing",
   noIndex: true,
 });
@@ -159,7 +159,7 @@ async function BillingContent() {
 
           {isPro ? (
             <p className="text-sm text-muted-foreground">
-              Kamu sudah di plan {planLabels[currentPlan]}. Terima kasih telah mendukung KilatKoding!
+              Kamu sudah di plan {planLabels[currentPlan]}. Terima kasih telah mendukung portfolio ini!
             </p>
           ) : (
             <p className="text-sm text-muted-foreground">

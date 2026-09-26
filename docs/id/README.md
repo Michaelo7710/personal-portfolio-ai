@@ -1,8 +1,8 @@
-# Dokumentasi Proyek
+﻿# Dokumentasi Proyek
 
 Folder ini mendokumentasikan kondisi repository saat ini: sebuah boilerplate SaaS Next.js yang production-ready untuk developer Indonesia dengan auth, payment, email, AI, blog, test, dan CI yang sudah saling terhubung.
 
-Repository ini awalnya memang berasal dari starter resmi Supabase `with-supabase`, tetapi sekarang sudah berkembang menjadi app KilatKoding lengkap beserta docs, integrasi, dan workflow-nya.
+Repository ini awalnya memang berasal dari starter resmi Supabase `with-supabase`, tetapi sekarang sudah berkembang menjadi app Portfolio lengkap beserta docs, integrasi, dan workflow-nya.
 
 ## Mulai Dari Sini
 
@@ -21,7 +21,7 @@ Repository ini awalnya memang berasal dari starter resmi Supabase `with-supabase
 - Integrasi auth dan backend: Supabase SSR + browser client
 - Dukungan tema: `next-themes`
 - Integrasi AI: Vercel AI SDK (OpenAI + Anthropic)
-- Git remote: `git@github.com:galpratama/kilatkoding-src.git`
+- Git remote: `git@github.com:galpratama/Portfolio-src.git`
 
 ## Cakupan Aplikasi Saat Ini
 

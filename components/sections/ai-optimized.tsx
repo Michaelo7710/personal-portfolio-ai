@@ -25,7 +25,7 @@ export function AiOptimizedSection() {
               Kompatibel sama Claude Code, Copilot, dan AI tools lainnya.
             </h2>
             <p className="marketing-copy leading-relaxed">
-              KilatKoding didesain supaya AI bisa bantu kamu coding lebih efektif.
+              Portfolio platform ini didesain supaya AI bisa bantu kamu coding lebih efektif.
               Codebase yang clean dan terstruktur bikin AI tools bisa ngerti konteks
               dengan benar — jadi saran yang keluar lebih relevan.
             </p>
@@ -55,7 +55,7 @@ export function AiOptimizedSection() {
             </div>
             <div className="marketing-ai-note text-sm leading-relaxed">
               <span className="font-mono text-xs block mb-2 text-primary">CLAUDE.md</span>
-              KilatKoding + Claude Code = development 10× lebih cepat. AI bisa langsung
+              AI-Augmented workflow = development 10× lebih cepat. AI bisa langsung
               ngerti arsitektur, payment flow, dan konvensi kode tanpa penjelasan panjang.
             </div>
           </div>

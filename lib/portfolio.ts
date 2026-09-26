@@ -106,6 +106,7 @@ export const staticCaseStudiesFallback: ProjectCaseStudyMeta[] = [
     featuredBadge: "Accessibility Masterpiece",
     date: "2026-09-21",
     published: true,
+    githubUrl: "https://github.com/Michaelo7710/quranapp-showcase",
     techStack: [
       "React Native",
       "Design System",
@@ -138,45 +139,46 @@ export const staticCaseStudiesFallback: ProjectCaseStudyMeta[] = [
     },
   },
   {
-    id: "edu-sim",
-    slug: "edu-sim",
-    title: "Sensei Edu-Sim Suite",
-    tagline: "Simulator Sains & Aljabar Satu File HTML Mandiri 60 FPS",
+    id: "personal-portfolio-ai",
+    slug: "personal-portfolio-ai",
+    title: "Personal Portfolio & Multimodal ATS-CV Engine",
+    tagline: "Platform Portofolio Interaktif & Generator CV Linear Berstandar ATS",
     description:
-      "Laboratorium simulasi aljabar dan kalkulus mandiri (single-file HTML, zero CDN) dengan parser matematika aman tanpa eval, kontrol pan/zoom tak terbatas, dan kuis diagnostik HOTS.",
-    category: "Interactive Web & STEM Engine",
-    featuredBadge: "Pure Canvas & Math Engine",
-    date: "2026-09-22",
+      "Arsitektur web modern Next.js 16 (App Router) terintegrasi dengan Google Gemini Multimodal Vision API untuk ekstraksi OCR loker dan matching kualifikasi secara zero-hallucination.",
+    category: "AI Systems & Full-Stack Web",
+    featuredBadge: "AI-Augmented Engineering",
+    date: "2026-09-24",
     published: true,
+    githubUrl: "https://github.com/Michaelo7710/personal-portfolio-ai",
     techStack: [
-      "HTML5 Canvas 2D",
-      "Zero-Eval Math Parser",
-      "Adaptive Grid",
-      "Socratic HOTS Engine",
-      "Single-File HTML",
+      "Next.js 16",
+      "TypeScript",
+      "Google Gemini 1.5",
+      "Tailwind CSS",
+      "Vitest (123 Tests)",
     ],
     metrics: [
-      { label: "Ukuran Berkas", value: "< 40 KB" },
-      { label: "Frame Rate", value: "60 FPS Canvas" },
-      { label: "Dependensi", value: "0 External CDN" },
+      { label: "Kepatuhan ATS", value: "100% Linear Single-Column" },
+      { label: "Otomasi Tes", value: "123 Tests Pass" },
+      { label: "AI Grounding", value: "Zero-Hallucination" },
     ],
     starSummary: {
       situation:
-        "Media pembelajaran interaktif umumnya berat, memerlukan server backend rumit, dan tersendat di komputer sekolah dengan spesifikasi terbatas.",
+        "Rekruter sering kali kesulitan memverifikasi kredibilitas teknis pelamar secara cepat dan sistem ATS sering menolak CV berformat multi-kolom.",
       architecture:
-        "Recursive Descent Math Parser mandiri (zero eval), sistem kanvas adaptif dengan infinite pan/zoom, dan state engine terisolasi dalam satu berkas HTML.",
+        "Engine multimodal bertenaga Gemini Vision OCR untuk mengekstrak kualifikasi loker, grounding data riil GitHub, dan ekspor dokumen A4.",
       impact:
-        "Berjalan mulus 60 FPS di laptop sekolah RAM ≤ 8GB, portabel tanpa instalasi, dan 100% lulus 12 pintu audit statis QA.",
+        "Menghasilkan resume terstandarisasi ATS dengan skor kecocokan kata kunci nyata dan live print preview A4 tanpa dependensi pihak ketiga.",
     },
     star: {
       situation:
-        "Penyampaian konsep sains dan matematika abstrak (seperti fungsi kuadrat, gelombang sinus, dan gravitasi) sering kali gagal karena buku pelajaran bersifat statis. Di sisi lain, simulator berbasis web yang ada di pasaran umumnya menggunakan library pihak ketiga yang sangat besar (> 5MB), memerlukan koneksi internet stabil ke CDN eksternal, atau memakai Java applet kuno yang tidak lagi didukung peramban modern. Komputer laboratorium sekolah dengan spesifikasi rendah (RAM ≤ 8GB) sering kali mengalami tab browser crash.",
+        "Sistem seleksi Applicant Tracking System (ATS) di industri perangkat lunak modern menolak format resume yang tidak linear, sementara rekruter teknis menginginkan bukti konkret berupa link repositori dan automated testing passing rate, bukan sekadar daftar klaim teks pasif.",
       task:
-        "Membangun arsitektur media simulasi edukasi interaktif mandiri yang terbungkus utuh dalam SATU file .html (< 40KB), tanpa dependensi CDN eksternal, berjalan konsisten pada 60 FPS di perangkat berspesifikasi minim, mengeksekusi rumus matematika dengan parser aman tanpa fungsi berbahaya eval(), serta dilengkapi evaluasi pedagogis Sokratik HOTS.",
+        "Membangun portofolio personal berkinerja tinggi berbasis Next.js 16 App Router yang dilengkapi generator CV ATS multimodal cerdas (mampu membaca teks dan tangkapan layar loker), mencocokkan kebutuhan industri dengan portofolio GitHub riil, serta mencetak berkas A4 yang 100% lolos parser ATS.",
       action:
-        "1. Merancang Zero-Eval Recursive Descent Math Parser mandiri yang memecah string fungsi (e.g., 'sin(2*x) + 0.5*x^2') menjadi token dan Abstract Syntax Tree (AST) secara aman tanpa kerentanan XSS. 2. Membangun Engine Visual Canvas 2D murni berbasis requestAnimationFrame dengan sistem transformasi koordinat layar-ke-matematis, infinite pan, smooth mouse-wheel zoom, dan adaptive grid intervaling. 3. Mengintegrasikan Modul Pedagogi Sokratik HOTS yang menyajikan kuis diagnostik interaktif dengan analisis distraktor mendalam (menjelaskan secara jernih mengapa pilihan salah keliru dan meluruskan miskonsepsi hulu). 4. Menerapkan strategi isolasi state FSM satu file dengan CSS modern tanpa build step eksternal.",
+        "1. Mengimplementasikan integrasi Google Gemini Multimodal API untuk mengekstrak kualifikasi kunci dari poster lowongan kerja. 2. Membangun Engine Grounding Data Proyek Berbasis Repositori GitHub untuk menjamin nol halusinasi (Zero-Hallucination). 3. Merancang tata letak cetak dokumen A4 berbasis CSS murni yang memutus dependensi library konversi berat dan mengeliminasi pemborosan memori. 4. Menegakkan pengujian otomatis dengan Vitest (123 unit/integration tests) dan kepatuhan TypeScript strict mode.",
       result:
-        "Simulator berhasil dikemas dalam berkas tunggal berukuran hanya 38KB, dapat dijalankan secara instan cukup dengan double-click pada browser apa pun tanpa instalasi atau koneksi internet. Frame rate rendering stabil di 60 FPS dengan konsumsi RAM di bawah 30MB, dan 100% lulus 12 gerbang audit statis QA.",
+        "Platform berhasil dirilis dengan kecepatan muat di bawah 1 detik, skor aksesibilitas tinggi, dan mesin generator resume yang mampu memproduksi berkas ATS berformat A4 secara deterministik.",
     },
   },
 ];

@@ -35,9 +35,9 @@ const exploreSections: NavSection[] = [
         description: "Aplikasi mobile modern dengan Design System & Tajweed Engine",
       },
       {
-        label: "Edu-Sim Suite (Interactive Science)",
+        label: "Personal Portfolio AI",
         href: "/#portfolio",
-        description: "Simulator sains & kalkulus satu file HTML mandiri 60 FPS",
+        description: "Platform portofolio interaktif & generator CV linear ATS multimodal",
       },
     ],
   },
@@ -110,7 +110,7 @@ const updateSections: NavSection[] = [
       {
         label: "Tentang",
         href: "/about",
-        description: "Cerita produk, stack, dan siapa di balik KilatKoding",
+        description: "Cerita rekayasa, stack, dan profil Mikail Nurwahid",
       },
       {
         label: "Privasi",

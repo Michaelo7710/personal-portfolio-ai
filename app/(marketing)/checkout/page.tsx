@@ -13,9 +13,9 @@ import {
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Checkout — KilatKoding",
+  title: "Checkout — Mikail Nurwahid Portfolio",
   description:
-    "Lihat paket KilatKoding dan lanjutkan ke alur pembelian boilerplate untuk developer Indonesia.",
+    "Lihat paket dan lanjutkan ke alur pemilihan lisensi.",
   path: "/checkout",
 });
 
@@ -102,7 +102,7 @@ export default async function CheckoutPage({
               <CardHeader className="pb-3">
                 <div className="flex items-start justify-between">
                   <div>
-                    <CardTitle className="text-lg">KilatKoding {plan.name}</CardTitle>
+                    <CardTitle className="text-lg">Paket {plan.name}</CardTitle>
                     <p className="text-sm text-muted-foreground mt-0.5">{plan.description}</p>
                   </div>
                   <Badge>Lifetime</Badge>

@@ -15,30 +15,30 @@ describe("lib/ai/ats-prompt", () => {
     const projectSlugs = CANDIDATE_GROUND_TRUTH.projects.map((p) => p.slug);
     expect(projectSlugs).toContain("wallet-app");
     expect(projectSlugs).toContain("quran-app");
-    expect(projectSlugs).toContain("edu-sim");
+    expect(projectSlugs).toContain("personal-portfolio-ai");
   });
 
   it("builds ATS prompt enforcing strict linear single-column format rules", () => {
     const { systemPrompt, userPrompt } = buildAtsCvPrompt({
-      jobDescription: "Senior React Native & Mobile Systems Engineer with Clean Architecture experience",
-      targetRole: "Senior Mobile Engineer",
+      jobDescription: "React Native & Mobile Systems Engineer with Clean Architecture experience",
+      targetRole: "Software Engineer Fullstack Mobile App",
     });
 
     expect(systemPrompt).toContain("ZERO HALLUCINATION");
-    expect(systemPrompt).toContain("LINEAR SINGLE-COLUMN LAYOUT");
-    expect(userPrompt).toContain("Senior Mobile Engineer");
+    expect(systemPrompt).toContain("CANDIDATE AUTHENTIC POSITIONING");
+    expect(userPrompt).toContain("Software Engineer Fullstack Mobile App");
     expect(userPrompt).toContain("GreenPay E-Wallet");
     expect(userPrompt).toContain("QuranApp");
-    expect(userPrompt).toContain("Sensei Edu-Sim Suite");
+    expect(userPrompt).toContain("Personal Portfolio");
   });
 
   it("generates deterministic ATS CV with matched keywords and quantified STAR bullets", () => {
     const result = generateDeterministicAtsCv({
-      jobDescription: "Looking for an expert in React Native, Clean Architecture, and Offline-First SQLite",
-      targetRole: "Lead Mobile Architect",
+      jobDescription: "Looking for an engineer skilled in React Native, Clean Architecture, and Offline-First SQLite",
+      targetRole: "Software Engineer Fullstack Mobile App",
     });
 
-    expect(result.targetRole).toBe("Lead Mobile Architect");
+    expect(result.targetRole).toBe("Software Engineer Fullstack Mobile App");
     expect(result.atsScore).toBeGreaterThanOrEqual(85);
     expect(result.matchedKeywords).toContain("React Native");
     expect(result.matchedKeywords).toContain("Clean Architecture");
@@ -50,9 +50,10 @@ describe("lib/ai/ats-prompt", () => {
     expect(result.markdown).toContain("## CORE TECHNICAL COMPETENCIES");
     expect(result.markdown).toContain("GreenPay E-Wallet");
     expect(result.markdown).toContain("QuranApp");
-    expect(result.markdown).toContain("Sensei Edu-Sim Suite");
+    expect(result.markdown).toContain("Personal Portfolio");
     expect(result.markdown).toContain("454 automated unit & integration tests");
     expect(result.markdown).toContain("WCAG 2.1 AA");
-    expect(result.markdown).toContain("60 FPS");
+    expect(result.html).toContain("<!DOCTYPE html>");
+    expect(result.projects[0].githubUrl).toContain("github.com/Michaelo7710");
   });
 });

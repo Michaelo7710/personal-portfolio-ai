@@ -3,8 +3,8 @@ import { createMetadata } from "@/lib/seo";
 import { VerifyEmailClient } from "./verify-email-client";
 
 export const metadata = createMetadata({
-  title: "Verifikasi Email — KilatKoding",
-  description: "Periksa inbox kamu untuk menyelesaikan verifikasi akun KilatKoding.",
+  title: "Verifikasi Email — Mikail Nurwahid Portfolio",
+  description: "Periksa inbox kamu untuk menyelesaikan verifikasi akun portfolio.",
   path: "/auth/verify-email",
   noIndex: true,
 });

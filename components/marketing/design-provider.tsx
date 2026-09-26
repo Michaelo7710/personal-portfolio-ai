@@ -19,7 +19,7 @@ import {
   type MarketingTheme,
 } from "@/config/marketing-designs";
 
-const STORAGE_KEY = "kilatkoding-marketing-design";
+const STORAGE_KEY = "portfolio-marketing-design";
 
 type MarketingDesignContextValue = {
   activeDesign: MarketingDesignPreset;

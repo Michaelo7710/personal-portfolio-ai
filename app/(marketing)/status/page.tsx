@@ -7,9 +7,9 @@ import { serviceStatusPageConfig, type ServiceStatus } from "@/config/status-pag
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Status — KilatKoding",
+  title: "Status Layanan — Mikail Nurwahid Portfolio",
   description:
-    "Status operasional layanan KilatKoding — website, auth, database, email, dan payment.",
+    "Status operasional layanan portfolio — website, auth, database, email, dan payment.",
   path: "/status",
 });
 

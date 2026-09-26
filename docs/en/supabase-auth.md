@@ -1,8 +1,8 @@
-# Supabase And Auth
+﻿# Supabase And Auth
 
 ## Overview
 
-KilatKoding uses Supabase for authentication, session handling, and database. The auth system supports three sign-in methods:
+Portfolio uses Supabase for authentication, session handling, and database. The auth system supports three sign-in methods:
 
 - **Email/password** — standard credentials flow
 - **Google OAuth** — one-click sign-in via Google

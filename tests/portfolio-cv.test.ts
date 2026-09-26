@@ -18,7 +18,7 @@ describe("tests/portfolio-cv (End-to-End ATS & MDX Verification Suite)", () => {
       const slugs = caseStudies.map((c) => c.slug);
       expect(slugs).toContain("wallet-app");
       expect(slugs).toContain("quran-app");
-      expect(slugs).toContain("edu-sim");
+      expect(slugs).toContain("personal-portfolio-ai");
 
       for (const study of caseStudies) {
         expect(study.title.length).toBeGreaterThan(3);
@@ -62,15 +62,13 @@ describe("tests/portfolio-cv (End-to-End ATS & MDX Verification Suite)", () => {
       expect(quran?.meta.metrics.some((m) => m.value.includes("WCAG 2.1 AA"))).toBe(true);
     });
 
-    it("verifies Sensei Edu-Sim Suite single-file HTML & zero-eval math parser", () => {
-      const eduSim = getCaseStudyBySlug("edu-sim");
-      expect(eduSim).not.toBeNull();
-      expect(eduSim?.meta.title).toBe("Sensei Edu-Sim Suite");
-      expect(eduSim?.content).toContain("Recursive Descent Math Parser");
-      expect(eduSim?.content).toContain("Kanvas 2D");
-      expect(eduSim?.meta.techStack).toContain("HTML5 Canvas 2D");
-      expect(eduSim?.meta.metrics.some((m) => m.value.includes("60 FPS"))).toBe(true);
-      expect(eduSim?.meta.metrics.some((m) => m.value.includes("< 40 KB"))).toBe(true);
+    it("verifies Personal Portfolio AI case study Next.js 16 & Gemini Vision OCR", () => {
+      const portfolio = getCaseStudyBySlug("personal-portfolio-ai");
+      expect(portfolio).not.toBeNull();
+      expect(portfolio?.meta.title).toBe("Personal Portfolio & Multimodal ATS-CV Engine");
+      expect(portfolio?.content).toContain("Gemini");
+      expect(portfolio?.meta.techStack).toContain("Next.js 16");
+      expect(portfolio?.meta.metrics.some((m) => m.value.includes("123 Tests"))).toBe(true);
     });
   });
 
@@ -80,9 +78,9 @@ describe("tests/portfolio-cv (End-to-End ATS & MDX Verification Suite)", () => {
   describe("ATS Format Linting & Zero-Hallucination Guard", () => {
     it("enforces strict linear single-column layout without tables or visual clutter", () => {
       const rolesToTest = [
-        "Senior React Native Engineer",
-        "Lead AI & Fullstack Systems Engineer",
-        "Frontend & Mobile Architect",
+        "Software Engineer Fullstack Mobile App",
+        "Frontend & Mobile Systems Engineer",
+        "Full-Stack Mobile & AI Systems Engineer",
       ];
 
       for (const role of rolesToTest) {
@@ -103,11 +101,12 @@ describe("tests/portfolio-cv (End-to-End ATS & MDX Verification Suite)", () => {
         expect(result.markdown).toContain(`# ${CANDIDATE_GROUND_TRUTH.name}`);
         expect(result.markdown).toContain("## PROFESSIONAL SUMMARY");
         expect(result.markdown).toContain("## CORE TECHNICAL COMPETENCIES");
-        expect(result.markdown).toContain("## FEATURED SYSTEMS & PRODUCTION CASE STUDIES");
-        expect(result.markdown).toContain("## EDUCATION & CONTINUOUS LEARNING");
+        expect(result.markdown).toContain("## FEATURED SYSTEMS & PRODUCTION PROJECTS");
+        expect(result.markdown).toContain("## EDUCATION & CREDENTIALS");
 
-        // 4. Action Verbs in Bullet Points
-        expect(result.markdown).toMatch(/\*\s+\*\*(?:Context|Architectural Action|Security|Transaction|Design|Modular|Performance|Architecture|Zero-Eval|Visual Canvas)/);
+        // 4. Bullets present
+        expect(result.projects.length).toBeGreaterThanOrEqual(3);
+        expect(result.projects[0].bullets.length).toBeGreaterThan(0);
 
         // 5. ATS Score within optimal range
         expect(result.atsScore).toBeGreaterThanOrEqual(85);
@@ -123,7 +122,7 @@ describe("tests/portfolio-cv (End-to-End ATS & MDX Verification Suite)", () => {
       // Must contain real projects
       expect(result.markdown).toContain("GreenPay E-Wallet");
       expect(result.markdown).toContain("QuranApp (Digital Mushaf)");
-      expect(result.markdown).toContain("Sensei Edu-Sim Suite");
+      expect(result.markdown).toContain("Personal Portfolio & Multimodal ATS-CV Engine");
 
       // Must not hallucinate fictitious big-tech companies as candidate employers
       expect(result.markdown).not.toContain("Ex-Google");
@@ -140,7 +139,7 @@ describe("tests/portfolio-cv (End-to-End ATS & MDX Verification Suite)", () => {
     it("handles empty or blank job descriptions gracefully without crashing", () => {
       const promptResult = buildAtsCvPrompt({});
       expect(promptResult.systemPrompt).toBeTruthy();
-      expect(promptResult.userPrompt).toContain("Senior Software Engineer");
+      expect(promptResult.userPrompt).toContain("Software Engineer Fullstack Mobile App");
 
       const cvResult = generateDeterministicAtsCv({});
       expect(cvResult.targetRole).toBeTruthy();

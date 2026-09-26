@@ -5,7 +5,7 @@ import { join } from "node:path";
 
 describe("scripts/check-env.mjs", () => {
   it("loads Next.js env files from the current working directory", () => {
-    const tempDir = mkdtempSync(join(tmpdir(), "kilatkoding-check-env-"));
+    const tempDir = mkdtempSync(join(tmpdir(), "portfolio-check-env-"));
     const scriptPath = join(process.cwd(), "scripts/check-env.mjs");
 
     try {

@@ -3,8 +3,8 @@ import { Separator } from "@/components/ui/separator";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Changelog — KilatKoding",
-  description: "Riwayat pembaruan dan fitur baru di KilatKoding.",
+  title: "Changelog — Mikail Nurwahid Portfolio",
+  description: "Riwayat pembaruan dan fitur baru pada portfolio dan platform.",
   path: "/changelog",
 });
 
@@ -134,7 +134,7 @@ export default function ChangelogPage() {
       <div className="space-y-2">
         <h1 className="text-3xl font-bold tracking-tight">Changelog</h1>
         <p className="text-muted-foreground">
-          Riwayat pembaruan dan fitur baru di KilatKoding.
+          Riwayat pembaruan dan fitur baru pada portfolio dan platform ini.
         </p>
       </div>
 

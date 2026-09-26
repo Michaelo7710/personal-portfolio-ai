@@ -3,9 +3,9 @@ import { createMetadata } from "@/lib/seo";
 import { WaitlistPageClient } from "./waitlist-page";
 
 export const metadata = createMetadata({
-  title: "Waitlist — KilatKoding",
+  title: "Waitlist — Mikail Nurwahid Portfolio",
   description:
-    "Daftar waitlist KilatKoding untuk mendapatkan early access dan diskon launch pertama.",
+    "Daftar waitlist untuk mendapatkan early access dan pembaruan pertama.",
   path: "/waitlist",
 });
 

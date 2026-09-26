@@ -17,20 +17,20 @@ type WelcomeEmailProps = {
 
 export function WelcomeEmail({
   name = "Developer",
-  dashboardUrl = "https://kilatkoding.com/dashboard",
+  dashboardUrl = "/dashboard",
 }: WelcomeEmailProps) {
   return (
     <Html lang="id">
       <Head />
-      <Preview>Selamat datang di KilatKoding 🚀</Preview>
+      <Preview>Selamat datang di Mikail Portfolio 🚀</Preview>
       <Body style={styles.body}>
         <Container style={styles.container}>
-          <Heading style={styles.heading}>KilatKoding</Heading>
+          <Heading style={styles.heading}>Mikail Portfolio</Heading>
 
           <Section>
             <Text style={styles.text}>Hei {name},</Text>
             <Text style={styles.text}>
-              Selamat datang di KilatKoding! Akun kamu udah siap.
+              Selamat datang di Mikail Portfolio! Akun kamu udah siap.
             </Text>
             <Text style={styles.text}>
               Sekarang kamu bisa mulai pakai boilerplate-nya dan langsung fokus
@@ -48,7 +48,7 @@ export function WelcomeEmail({
             <Text style={styles.footer}>
               Kalau ada pertanyaan, langsung tanya di Discord community kita ya.
             </Text>
-            <Text style={styles.footer}>— Tim KilatKoding</Text>
+            <Text style={styles.footer}>— Tim Mikail Portfolio</Text>
           </Section>
         </Container>
       </Body>

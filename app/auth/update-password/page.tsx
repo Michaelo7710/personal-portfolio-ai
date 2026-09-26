@@ -3,8 +3,8 @@ import { getSupabasePublicConfig } from "@/lib/config/public-features";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Update Password — KilatKoding",
-  description: "Atur password baru untuk akun KilatKoding kamu.",
+  title: "Update Password — Mikail Nurwahid Portfolio",
+  description: "Atur password baru untuk akun portfolio kamu.",
   path: "/auth/update-password",
   noIndex: true,
 });

@@ -1,8 +1,8 @@
-# Project Documentation
+﻿# Project Documentation
 
 This folder documents the current state of the repository as it exists today: a production-ready Next.js SaaS boilerplate for Indonesian developers with auth, payments, email, AI, blog, tests, and CI already wired together.
 
-The repository originally started from Supabase's `with-supabase` Next.js starter, but it has since been expanded into KilatKoding's app, docs, integrations, and workflow conventions.
+The repository originally started from Supabase's `with-supabase` Next.js starter, but it has since been expanded into Portfolio's app, docs, integrations, and workflow conventions.
 
 ## Start Here
 
@@ -21,7 +21,7 @@ The repository originally started from Supabase's `with-supabase` Next.js starte
 - Auth and backend integration: Supabase SSR + browser client
 - Theme support: `next-themes`
 - AI integration: Vercel AI SDK (OpenAI + Anthropic)
-- Git remote: `git@github.com:galpratama/kilatkoding-src.git`
+- Git remote: `git@github.com:galpratama/Portfolio-src.git`
 
 ## Scope Of The Current App
 

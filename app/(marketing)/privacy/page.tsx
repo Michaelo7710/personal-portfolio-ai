@@ -3,9 +3,9 @@ import { siteConfig } from "@/config/site";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Kebijakan Privasi — KilatKoding",
+  title: "Kebijakan Privasi — Mikail Nurwahid Portfolio",
   description:
-    "Kebijakan privasi KilatKoding — bagaimana kami mengumpulkan, menggunakan, dan melindungi data kamu.",
+    "Kebijakan privasi platform — bagaimana kami mengumpulkan, menggunakan, dan melindungi data kamu.",
   path: "/privacy",
 });
 

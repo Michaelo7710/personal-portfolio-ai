@@ -20,7 +20,7 @@ export function VerifyEmailClient({
   if (!supabaseConfig.authEnabled) {
     return (
       <>
-        <TemplateBanner description="Halaman verifikasi email — ganti noreply@kilatkoding.com dengan domain email produkmu" />
+        <TemplateBanner description="Halaman verifikasi email — pastikan email terkonfirmasi untuk keamanan akun" />
         <div className="min-h-screen flex items-center justify-center px-4 py-16">
           <div className="max-w-md w-full">
             <SupabaseEnvNotice />
@@ -64,7 +64,7 @@ export function VerifyEmailClient({
 
   return (
     <>
-      <TemplateBanner description="Halaman verifikasi email — ganti noreply@kilatkoding.com dengan domain email produkmu" />
+      <TemplateBanner description="Halaman verifikasi email — pastikan email terkonfirmasi untuk keamanan akun" />
       <div className="min-h-screen flex flex-col items-center justify-center px-4 text-center">
         <div className="max-w-md w-full space-y-6">
           <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
@@ -84,7 +84,7 @@ export function VerifyEmailClient({
             <ul className="space-y-1 list-disc list-inside">
               <li>Cek folder Spam atau Promotions</li>
               <li>
-                Tambahkan noreply@kilatkoding.com ke kontak untuk mencegah masuk
+                Tambahkan mikailnurwahid01@gmail.com ke kontak untuk mencegah masuk
                 spam
               </li>
               <li>Link valid selama 24 jam</li>

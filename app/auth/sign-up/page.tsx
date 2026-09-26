@@ -3,8 +3,8 @@ import { getSupabasePublicConfig } from "@/lib/config/public-features";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Daftar — KilatKoding",
-  description: "Buat akun KilatKoding untuk mulai mencoba boilerplate.",
+  title: "Daftar — Mikail Nurwahid Portfolio",
+  description: "Buat akun untuk mengakses showcase portfolio.",
   path: "/auth/sign-up",
   noIndex: true,
 });

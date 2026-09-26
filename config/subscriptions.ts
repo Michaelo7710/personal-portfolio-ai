@@ -42,7 +42,7 @@ export const paidPlanCatalog: Record<PaidPlan, SubscriptionPlanDefinition> = {
     items: [
       {
         id: "basic-monthly",
-        name: "KilatKoding Basic - 1 Bulan",
+        name: "Portfolio Basic - 1 Bulan",
         price: 49_000,
         quantity: 1,
       },
@@ -66,7 +66,7 @@ export const paidPlanCatalog: Record<PaidPlan, SubscriptionPlanDefinition> = {
     items: [
       {
         id: "pro-monthly",
-        name: "KilatKoding Pro - 1 Bulan",
+        name: "Portfolio Pro - 1 Bulan",
         price: 99_000,
         quantity: 1,
       },
@@ -88,7 +88,7 @@ export const paidPlanCatalog: Record<PaidPlan, SubscriptionPlanDefinition> = {
     items: [
       {
         id: "ultimate-monthly",
-        name: "KilatKoding Ultimate - 1 Bulan",
+        name: "Portfolio Ultimate - 1 Bulan",
         price: 299_000,
         quantity: 1,
       },

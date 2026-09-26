@@ -8,9 +8,9 @@ import Link from "next/link";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Program Afiliasi — KilatKoding",
+  title: "Program Afiliasi — Mikail Nurwahid Portfolio",
   description:
-    "Bergabung jadi afiliasi KilatKoding dan dapatkan komisi 30% untuk setiap referral.",
+    "Bergabung jadi afiliasi platform dan dapatkan komisi 30% untuk setiap referral.",
   path: "/affiliates",
 });
 
@@ -73,8 +73,8 @@ const faqs = [
     a: "Tidak ada batasan. Semakin banyak referral, semakin tinggi tier komisi kamu.",
   },
   {
-    q: "Bisa afiliasi kalau belum beli KilatKoding?",
-    a: "Bisa, tapi kami sarankan beli dulu supaya bisa review dan rekomendasikan dengan jujur. Kredibilitas kamu lebih terjaga.",
+    q: "Bisa afiliasi kalau belum mencoba platform?",
+    a: "Bisa, tapi kami sarankan mencoba dulu supaya bisa review dan rekomendasikan dengan jujur. Kredibilitas kamu lebih terjaga.",
   },
 ];
 
@@ -86,11 +86,11 @@ export default function AffiliatesPage() {
       <div className="text-center space-y-4">
         <Badge variant="secondary">Program Afiliasi</Badge>
         <h1 className="text-4xl font-bold tracking-tight">
-          Rekomendasikan KilatKoding. Dapat komisi 30%.
+          Rekomendasikan platform. Dapat komisi 30%.
         </h1>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
           Bergabung dengan puluhan afiliasi yang sudah menghasilkan passive income dengan
-          merekomendasikan KilatKoding ke komunitas developer Indonesia.
+          merekomendasikan platform ini ke komunitas developer Indonesia.
         </p>
         <Button size="lg" asChild>
           <Link href="/auth/sign-up">Daftar Jadi Afiliasi — Gratis</Link>

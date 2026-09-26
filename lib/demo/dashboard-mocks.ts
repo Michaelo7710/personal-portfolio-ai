@@ -207,14 +207,14 @@ export function createDashboardDemoData({
       type: "subscription.change",
     },
     {
-      actor_email: "admin@kilatkoding.com",
+      actor_email: "admin@example.com",
       created_at: shiftDemoTime({ hours: 6 }),
       description: "Login dari 103.28.x.x",
       id: "a4",
       type: "user.login",
     },
     {
-      actor_email: "admin@kilatkoding.com",
+      actor_email: "admin@example.com",
       created_at: shiftDemoTime({ hours: 8 }),
       description: "Approve waitlist user@example.com",
       id: "a5",

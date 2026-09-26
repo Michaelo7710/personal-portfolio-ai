@@ -70,8 +70,8 @@ describe("app/api/contact/route", () => {
 
   it("sends contact requests through Resend", async () => {
     process.env.RESEND_API_KEY = "resend-key";
-    process.env.EMAIL_FROM = "KilatKoding <noreply@kilatkoding.com>";
-    process.env.CONTACT_EMAIL = "sales@kilatkoding.com";
+    process.env.EMAIL_FROM = "Mikail Nurwahid <mikailnurwahid01@gmail.com>";
+    process.env.CONTACT_EMAIL = "mikailnurwahid01@gmail.com";
     sendEmailMock.mockResolvedValue({ error: null });
 
     const { POST } = await import("@/app/api/contact/route");
@@ -90,11 +90,11 @@ describe("app/api/contact/route", () => {
     await expect(response.json()).resolves.toEqual({ success: true });
     expect(ResendMock).toHaveBeenCalledWith("resend-key");
     expect(sendEmailMock).toHaveBeenCalledWith({
-      from: "KilatKoding <noreply@kilatkoding.com>",
+      from: "Mikail Nurwahid <mikailnurwahid01@gmail.com>",
       replyTo: "member@example.com",
-      subject: "Pesan baru dari Member — KilatKoding",
+      subject: "Pesan baru dari Member — Portfolio Mikail Nurwahid",
       text: expect.stringContaining("Saya tertarik dengan boilerplate ini."),
-      to: "sales@kilatkoding.com",
+      to: "mikailnurwahid01@gmail.com",
     });
   });
 

@@ -1,4 +1,4 @@
-# Setup And Development
+﻿# Setup And Development
 
 ## Prerequisites
 
@@ -51,7 +51,7 @@ MIDTRANS_SERVER_KEY=your-midtrans-server-key
 NEXT_PUBLIC_MIDTRANS_CLIENT_KEY=your-midtrans-client-key
 
 RESEND_API_KEY=your-resend-api-key
-EMAIL_FROM=KilatKoding <noreply@yourdomain.com>
+EMAIL_FROM=Portfolio <noreply@yourdomain.com>
 
 DOKU_CLIENT_ID=your-doku-client-id
 DOKU_SECRET_KEY=your-doku-secret-key
@@ -75,7 +75,7 @@ Notes:
 - `SUPABASE_SERVICE_ROLE_KEY` is required for webhook writes, profile updates, order lookups, and admin reporting
 - `MIDTRANS_SERVER_KEY` is server-only; never prefix it with `NEXT_PUBLIC_`
 - `NEXT_PUBLIC_MIDTRANS_CLIENT_KEY` is the publishable key used to open the Snap popup on the frontend
-- `EMAIL_FROM` defaults to `KilatKoding <noreply@kilatkoding.com>` if not set; set it to match your verified Resend sender domain
+- `EMAIL_FROM` defaults to `Portfolio <noreply@Portfolio.com>` if not set; set it to match your verified Resend sender domain
 - `DOKU_CLIENT_ID` and `DOKU_SECRET_KEY` are server-only; never prefix them with `NEXT_PUBLIC_`
 - `ADMIN_EMAILS` is now a bootstrap list: matching users are upserted into `user_roles` as `admin` on first login
 - AI vars are optional; AI features are disabled when keys are not set

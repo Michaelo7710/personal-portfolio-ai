@@ -1,8 +1,8 @@
-# Current State
+﻿# Current State
 
 ## Summary
 
-KilatKoding is a Next.js boilerplate built specifically for Indonesian developers. Phases 1–4 are complete. The repository now includes:
+Portfolio is a Next.js boilerplate built specifically for Indonesian developers. Phases 1–4 are complete. The repository now includes:
 
 - Next.js App Router with route groups `(marketing)`, `(dashboard)`, and `auth`
 - TypeScript
@@ -72,7 +72,7 @@ KilatKoding is a Next.js boilerplate built specifically for Indonesian developer
 
 - The app runs with `npm run dev`
 - Linting passes with `npm run lint`
-- Landing page at `/` with KilatKoding branding, shared `Header` and `Footer`
+- Landing page at `/` with Portfolio branding, shared `Header` and `Footer`
 - Marketing routes support a preset switcher with twelve scoped visual systems without duplicating the route tree, while still respecting the shared light/dark/system theme switcher
 - Auth flows: sign up, sign in (password + Google OAuth + Magic Link), forgot password, update password
 - Dashboard at `/dashboard` — auth-gated, shows authenticated user info

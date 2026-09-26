@@ -13,7 +13,7 @@ export function TemplateBanner({ description }: TemplateBannerProps) {
           <span className="font-medium text-foreground">Template termasuk dalam starter</span>
           {description
             ? ` — ${description}`
-            : " — halaman ini bundled dalam KilatKoding, bisa kamu kustomisasi untuk produkmu sendiri."}
+            : " — halaman ini adalah bagian dari portofolio, dapat dikustomisasi sesuai kebutuhan arsitektur produk."}
         </span>
       </div>
     </div>

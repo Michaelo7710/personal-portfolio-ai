@@ -30,7 +30,7 @@ export function InvoiceEmail({
   customerName = "Developer",
   orderId = "KK-000000-XXXXXXXX",
   plan = "Pro",
-  items = [{ name: "KilatKoding Pro", price: 299000 }],
+  items = [{ name: "Portfolio Pro", price: 299000 }],
   total = 299000,
   paidAt = new Date().toLocaleDateString("id-ID", {
     day: "numeric",
@@ -41,10 +41,10 @@ export function InvoiceEmail({
   return (
     <Html lang="id">
       <Head />
-      <Preview>Invoice KilatKoding #{orderId}</Preview>
+      <Preview>Invoice Portfolio #{orderId}</Preview>
       <Body style={styles.body}>
         <Container style={styles.container}>
-          <Heading style={styles.heading}>KilatKoding</Heading>
+          <Heading style={styles.heading}>Portfolio</Heading>
           <Text style={styles.subheading}>Invoice Pembayaran</Text>
 
           <Section style={styles.metaSection}>
@@ -113,8 +113,8 @@ export function InvoiceEmail({
           <Hr style={styles.hr} />
 
           <Text style={styles.footer}>
-            Terima kasih sudah pakai KilatKoding! Kalau ada pertanyaan soal
-            invoice ini, hubungi kami di Discord.
+            Terima kasih sudah menggunakan layanan kami! Kalau ada pertanyaan soal
+            invoice ini, silakan hubungi kami.
           </Text>
         </Container>
       </Body>

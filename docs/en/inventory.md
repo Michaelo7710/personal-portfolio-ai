@@ -1,4 +1,4 @@
-# Source Inventory
+﻿# Source Inventory
 
 This file is a practical reference for the important source files currently in the repository.
 
@@ -206,7 +206,7 @@ accordion, alert, alert-dialog, aspect-ratio, avatar, badge, breadcrumb, button,
 | `lib/mdx.ts` | `getAllPosts()` and `getPostBySlug()` — file-system MDX helpers with frontmatter and reading time |
 | `app/(marketing)/blog/page.tsx` | Blog listing — `/blog` |
 | `app/(marketing)/blog/[slug]/page.tsx` | Blog post detail — `/blog/[slug]` |
-| `content/blog/memulai-dengan-kilatkoding.mdx` | Sample post: getting started guide |
+| `content/blog/memulai-dengan-Portfolio.mdx` | Sample post: getting started guide |
 | `content/blog/integrasi-midtrans-nextjs.mdx` | Sample post: Midtrans integration tutorial |
 
 ## Files Pending Creation (Future)

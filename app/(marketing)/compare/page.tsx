@@ -13,70 +13,70 @@ import Link from "next/link";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Perbandingan — KilatKoding",
+  title: "Perbandingan — Mikail Nurwahid Portfolio",
   description:
-    "Bandingkan KilatKoding dengan setup manual, laravel boilerplate, dan alternatif lainnya.",
+    "Bandingkan solusi kami dengan setup manual, boilerplate lain, dan alternatif lainnya.",
   path: "/compare",
 });
 
 type CellValue = true | false | null | string;
 
-const features: { category: string; rows: { label: string; kilatkoding: CellValue; manual: CellValue; laravelBoilerplate: CellValue }[] }[] = [
+const features: { category: string; rows: { label: string; starter: CellValue; manual: CellValue; laravelBoilerplate: CellValue }[] }[] = [
   {
     category: "Setup & Developer Experience",
     rows: [
-      { label: "Siap deploy dalam 1 hari", kilatkoding: true, manual: false, laravelBoilerplate: false },
-      { label: "TypeScript end-to-end", kilatkoding: true, manual: "Tergantung", laravelBoilerplate: false },
-      { label: "AI-friendly codebase (CLAUDE.md)", kilatkoding: true, manual: false, laravelBoilerplate: false },
-      { label: "Dokumentasi Bahasa Indonesia", kilatkoding: true, manual: false, laravelBoilerplate: false },
-      { label: "Hot reload & Turbopack", kilatkoding: true, manual: "Tergantung", laravelBoilerplate: false },
+      { label: "Siap deploy dalam 1 hari", starter: true, manual: false, laravelBoilerplate: false },
+      { label: "TypeScript end-to-end", starter: true, manual: "Tergantung", laravelBoilerplate: false },
+      { label: "AI-friendly codebase (CLAUDE.md)", starter: true, manual: false, laravelBoilerplate: false },
+      { label: "Dokumentasi Bahasa Indonesia", starter: true, manual: false, laravelBoilerplate: false },
+      { label: "Hot reload & Turbopack", starter: true, manual: "Tergantung", laravelBoilerplate: false },
     ],
   },
   {
     category: "Autentikasi",
     rows: [
-      { label: "Email & Password", kilatkoding: true, manual: "Manual", laravelBoilerplate: true },
-      { label: "Google OAuth", kilatkoding: true, manual: "Manual", laravelBoilerplate: "Plugin" },
-      { label: "Magic Link", kilatkoding: true, manual: "Manual", laravelBoilerplate: false },
-      { label: "OTP verification", kilatkoding: true, manual: "Manual", laravelBoilerplate: false },
-      { label: "Row Level Security (RLS)", kilatkoding: true, manual: false, laravelBoilerplate: false },
+      { label: "Email & Password", starter: true, manual: "Manual", laravelBoilerplate: true },
+      { label: "Google OAuth", starter: true, manual: "Manual", laravelBoilerplate: "Plugin" },
+      { label: "Magic Link", starter: true, manual: "Manual", laravelBoilerplate: false },
+      { label: "OTP verification", starter: true, manual: "Manual", laravelBoilerplate: false },
+      { label: "Row Level Security (RLS)", starter: true, manual: false, laravelBoilerplate: false },
     ],
   },
   {
     category: "Pembayaran Indonesia",
     rows: [
-      { label: "Midtrans Snap", kilatkoding: true, manual: "8+ jam setup", laravelBoilerplate: false },
-      { label: "Doku JOKUL", kilatkoding: true, manual: "8+ jam setup", laravelBoilerplate: false },
-      { label: "Webhook verification", kilatkoding: true, manual: "Manual", laravelBoilerplate: false },
-      { label: "Subscription management", kilatkoding: true, manual: "Manual", laravelBoilerplate: false },
-      { label: "Invoice & payment history", kilatkoding: true, manual: "Manual", laravelBoilerplate: false },
+      { label: "Midtrans Snap", starter: true, manual: "8+ jam setup", laravelBoilerplate: false },
+      { label: "Doku JOKUL", starter: true, manual: "8+ jam setup", laravelBoilerplate: false },
+      { label: "Webhook verification", starter: true, manual: "Manual", laravelBoilerplate: false },
+      { label: "Subscription management", starter: true, manual: "Manual", laravelBoilerplate: false },
+      { label: "Invoice & payment history", starter: true, manual: "Manual", laravelBoilerplate: false },
     ],
   },
   {
     category: "UI & Frontend",
     rows: [
-      { label: "44 UI Components", kilatkoding: true, manual: false, laravelBoilerplate: "Bootstrap" },
-      { label: "Dark mode bawaan", kilatkoding: true, manual: "Manual", laravelBoilerplate: false },
-      { label: "Responsive landing page", kilatkoding: true, manual: "Manual", laravelBoilerplate: false },
-      { label: "Admin dashboard", kilatkoding: true, manual: false, laravelBoilerplate: "Terbatas" },
-      { label: "Blog (MDX)", kilatkoding: true, manual: false, laravelBoilerplate: "Terbatas" },
+      { label: "44 UI Components", starter: true, manual: false, laravelBoilerplate: "Bootstrap" },
+      { label: "Dark mode bawaan", starter: true, manual: "Manual", laravelBoilerplate: false },
+      { label: "Responsive landing page", starter: true, manual: "Manual", laravelBoilerplate: false },
+      { label: "Admin dashboard", starter: true, manual: false, laravelBoilerplate: "Terbatas" },
+      { label: "Blog (MDX)", starter: true, manual: false, laravelBoilerplate: "Terbatas" },
     ],
   },
   {
     category: "Email & Notifikasi",
     rows: [
-      { label: "Resend integration", kilatkoding: true, manual: false, laravelBoilerplate: false },
-      { label: "React Email templates", kilatkoding: true, manual: false, laravelBoilerplate: false },
-      { label: "Welcome & invoice email", kilatkoding: true, manual: "Manual", laravelBoilerplate: false },
+      { label: "Resend integration", starter: true, manual: false, laravelBoilerplate: false },
+      { label: "React Email templates", starter: true, manual: false, laravelBoilerplate: false },
+      { label: "Welcome & invoice email", starter: true, manual: "Manual", laravelBoilerplate: false },
     ],
   },
   {
     category: "SEO & Production",
     rows: [
-      { label: "Sitemap & robots.txt", kilatkoding: true, manual: "Manual", laravelBoilerplate: "Plugin" },
-      { label: "OpenGraph tags", kilatkoding: true, manual: "Manual", laravelBoilerplate: "Terbatas" },
-      { label: "CI/CD (GitHub Actions)", kilatkoding: true, manual: false, laravelBoilerplate: false },
-      { label: "Vercel-ready config", kilatkoding: true, manual: "Manual", laravelBoilerplate: false },
+      { label: "Sitemap & robots.txt", starter: true, manual: "Manual", laravelBoilerplate: "Plugin" },
+      { label: "OpenGraph tags", starter: true, manual: "Manual", laravelBoilerplate: "Terbatas" },
+      { label: "CI/CD (GitHub Actions)", starter: true, manual: false, laravelBoilerplate: false },
+      { label: "Vercel-ready config", starter: true, manual: "Manual", laravelBoilerplate: false },
     ],
   },
 ];
@@ -94,10 +94,10 @@ export default function ComparePage() {
       <div className="text-center space-y-3">
         <Badge variant="secondary">Perbandingan</Badge>
         <h1 className="text-4xl font-bold tracking-tight">
-          KilatKoding vs Alternatif Lain
+          Solusi Kami vs Alternatif Lain
         </h1>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-          Kenapa harus pakai KilatKoding? Ini perbandingan jujurnya vs setup manual dan boilerplate lain.
+          Kenapa harus pakai solusi kami? Ini perbandingan jujurnya vs setup manual dan boilerplate lain.
         </p>
       </div>
 
@@ -107,7 +107,7 @@ export default function ComparePage() {
             <TableRow className="bg-muted/50">
               <TableHead className="w-[40%] font-semibold">Fitur</TableHead>
               <TableHead className="text-center font-semibold text-primary">
-                KilatKoding ✓
+                Solusi Kami ✓
               </TableHead>
               <TableHead className="text-center font-semibold text-muted-foreground">
                 Setup Manual
@@ -131,7 +131,7 @@ export default function ComparePage() {
                   <TableRow key={row.label}>
                     <TableCell className="text-sm">{row.label}</TableCell>
                     <TableCell className="text-center">
-                      <Cell value={row.kilatkoding} />
+                      <Cell value={row.starter} />
                     </TableCell>
                     <TableCell className="text-center">
                       <Cell value={row.manual} />

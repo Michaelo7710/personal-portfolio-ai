@@ -245,17 +245,17 @@ export function OverlaysTab() {
         <ComponentDemo title="HoverCard" description="Rich preview on hover">
           <HoverCard>
             <HoverCardTrigger asChild>
-              <Button variant="link">@kilatkoding</Button>
+              <Button variant="link">@mikail</Button>
             </HoverCardTrigger>
             <HoverCardContent className="w-64">
               <div className="flex gap-3">
                 <Avatar>
-                  <AvatarFallback className="bg-primary/10 text-primary">KK</AvatarFallback>
+                  <AvatarFallback className="bg-primary/10 text-primary">MN</AvatarFallback>
                 </Avatar>
                 <div className="space-y-1">
-                  <h4 className="text-sm font-semibold">KilatKoding</h4>
+                  <h4 className="text-sm font-semibold">Mikail Nurwahid</h4>
                   <p className="text-xs text-muted-foreground">
-                    Platform SaaS starter kit dengan Next.js + Supabase.
+                    Software Engineer Fullstack Mobile App & AI Builder.
                   </p>
                   <div className="flex items-center text-xs text-muted-foreground">
                     <CalendarDays className="mr-1 h-3 w-3" />

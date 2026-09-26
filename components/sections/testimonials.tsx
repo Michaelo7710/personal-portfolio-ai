@@ -14,7 +14,7 @@ const testimonials = [
     role: "Founder, TokoDigital.id",
     initials: "AS",
     quote:
-      "KilatKoding menghemat waktu saya berminggu-minggu. Integrasi Midtrans-nya sudah production-ready, tinggal isi API key dan langsung jalan.",
+      "Arsitektur Clean Architecture dan template sistemnya menghemat waktu berminggu-minggu. Integrasinya sudah production-ready, tinggal isi API key dan langsung jalan.",
   },
   {
     name: "Rina Kusuma",
@@ -48,8 +48,8 @@ export function TestimonialsSection() {
             Dipercaya Developer Indonesia
           </h2>
           <p className="marketing-copy mt-4 text-lg">
-            Dari indie hacker sampai startup, KilatKoding mempercepat
-            development mereka.
+            Dari pengembang independen hingga tim rekayasa perangkat lunak, arsitektur ini mempercepat
+            siklus rilis produk mereka.
           </p>
         </div>
         <Carousel

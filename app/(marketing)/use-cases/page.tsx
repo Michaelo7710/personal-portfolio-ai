@@ -6,9 +6,9 @@ import Link from "next/link";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Use Cases — KilatKoding",
+  title: "Use Cases — Mikail Nurwahid Portfolio",
   description:
-    "KilatKoding cocok untuk SaaS, marketplace, agency, dan startup. Lihat use case dan contoh nyatanya.",
+    "Solusi ini cocok untuk SaaS, marketplace, agency, dan startup. Lihat use case dan contoh nyatanya.",
   path: "/use-cases",
 });
 
@@ -17,7 +17,7 @@ const useCases = [
     badge: "SaaS Product",
     title: "Bikin SaaS dari nol",
     description:
-      "Punya ide SaaS tapi males setup auth, payment, dan email dari scratch? KilatKoding udah nyiapain semua itu. Tinggal fokus bikin fitur utama yang bikin produk kamu beda.",
+      "Punya ide SaaS tapi males setup auth, payment, dan email dari scratch? Boilerplate ini udah nyiapain semua itu. Tinggal fokus bikin fitur utama yang bikin produk kamu beda.",
     example: "tools produktivitas, project management, analytics dashboard",
     features: [
       "Auth lengkap (email, Google, Magic Link)",
@@ -55,7 +55,7 @@ const useCases = [
     badge: "Agency",
     title: "Deliver proyek klien lebih cepat",
     description:
-      "Setiap proyek klien butuh landing page, auth, dan payment. Dengan KilatKoding, kamu punya starting point yang solid untuk setiap proyek baru — tanpa ngulang setup yang sama.",
+      "Setiap proyek klien butuh landing page, auth, dan payment. Dengan boilerplate ini, kamu punya starting point yang solid untuk setiap proyek baru — tanpa ngulang setup yang sama.",
     example: "company profile dengan payment, membership site, subscription service",
     features: [
       "Unlimited client projects (paket Pro+)",
@@ -74,7 +74,7 @@ const useCases = [
     badge: "Startup",
     title: "Validasi ide dengan cepat",
     description:
-      "Startup butuh ship cepat, pivot cepat, dan belajar dari user nyata. KilatKoding bikin kamu bisa launch MVP dalam seminggu — bukan sebulan — dan mulai kumpulkan feedback lebih awal.",
+      "Startup butuh ship cepat, pivot cepat, dan belajar dari user nyata. Solusi ini bikin kamu bisa launch MVP dalam seminggu — bukan sebulan — dan mulai kumpulkan feedback lebih awal.",
     example: "MVP B2C/B2B, waitlist product, micro-SaaS niche market",
     features: [
       "Dari nol ke live dalam 7 hari",
@@ -100,7 +100,7 @@ export default function UseCasesPage() {
           Cocok untuk berbagai jenis produk digital.
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Apapun yang kamu bikin — SaaS, marketplace, atau project klien — KilatKoding punya
+          Apapun yang kamu bikin — SaaS, marketplace, atau project klien — platform ini punya
           fondasi yang kamu butuhkan.
         </p>
       </div>

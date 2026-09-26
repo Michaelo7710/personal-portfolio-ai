@@ -1,0 +1,21 @@
+---
+title: "Membangun Aplikasi Mobile Offline-First dengan Clean Architecture"
+description: "Strategi arsitektur 3-tier, SQLite local storage, dan sinkronisasi background untuk aplikasi finansial berdaya tahan tinggi."
+date: "2026-09-20"
+slug: "membangun-mobile-offline-first"
+author: "Mikail Nurwahid"
+tags: ["react-native", "clean-architecture", "offline-first", "sqlite"]
+published: true
+---
+
+## Mengapa Offline-First?
+
+Pada ekosistem aplikasi mobile modern di Indonesia, stabilitas jaringan seluler di lapangan kerap mengalami fluktuasi tajam (*spotty coverage*). Mengadopsi arsitektur offline-first menjamin keandalan data transaksi dan pengalaman pengguna yang mulus tanpa hambatan koneksi.
+
+## Tiga Pilar Fondasi Arsitektur
+1. **Domain Layer:** Entitas dan aturan bisnis murni yang bebas dependensi eksternal.
+2. **Use Case Layer:** Mengatur interactor transaksi dengan idempotency key guna mencegah race condition.
+3. **Data Source Layer:** Penyimpanan lokal SQLite dengan mitigasi dirty-reads dan sinkronisasi otomatis ke server saat jaringan pulih.
+
+## Hasil Terukur
+Dengan pengujian unit dan integrasi otomatis yang ketat, aplikasi mampu mempertahankan 100% ketahanan offline tanpa insiden transaksi gantung.

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPostBySlug(slug);
   if (!post) return {};
   return createMetadata({
-    title: `${post.frontmatter.title} — KilatKoding`,
+    title: `${post.frontmatter.title} — Mikail Nurwahid Portfolio`,
     description: post.frontmatter.description,
     path: `/blog/${slug}`,
     type: "article",
@@ -39,7 +39,7 @@ export default async function BlogPostPage({ params }: Props) {
   const { frontmatter, source } = post;
   const authorInitials = frontmatter.author
     ? frontmatter.author.slice(0, 2).toUpperCase()
-    : "KK";
+    : "MN";
 
   return (
     <main className="max-w-3xl mx-auto px-4 py-16">

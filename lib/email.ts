@@ -8,7 +8,7 @@ if (!process.env.RESEND_API_KEY) {
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const DEFAULT_FROM = process.env.EMAIL_FROM ?? "KilatKoding <noreply@kilatkoding.com>";
+const DEFAULT_FROM = process.env.EMAIL_FROM ?? "Mikail Nurwahid <mikailnurwahid01@gmail.com>";
 
 type SendEmailParams = {
   to: string;

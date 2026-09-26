@@ -7,7 +7,7 @@ import { formatDateInJakarta } from "@/lib/format/date";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Blog — KilatKoding",
+  title: "Blog — Mikail Nurwahid Portfolio",
   description: "Artikel dan tutorial untuk developer Indonesia.",
   path: "/blog",
 });

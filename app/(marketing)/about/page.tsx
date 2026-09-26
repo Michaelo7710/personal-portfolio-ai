@@ -6,9 +6,9 @@ import Link from "next/link";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Tentang Kami — KilatKoding",
+  title: "Tentang Kami — Mikail Nurwahid Portfolio",
   description:
-    "KilatKoding dibikin untuk developer Indonesia yang mau ship SaaS lebih cepat tanpa setup dari nol.",
+    "Portfolio dan boilerplate modern untuk engineering fullstack dan mobile app.",
   path: "/about",
 });
 
@@ -50,12 +50,12 @@ export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16 space-y-16">
       <div className="space-y-4">
-        <Badge variant="outline">Tentang KilatKoding</Badge>
+        <Badge variant="outline">Tentang Platform</Badge>
         <h1 className="text-4xl font-bold tracking-tight leading-tight">
           Dibikin untuk developer Indonesia yang mau ship lebih cepat.
         </h1>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          KilatKoding adalah boilerplate Next.js yang didesain khusus untuk ekosistem Indonesia.
+          Platform dan boilerplate Next.js yang didesain khusus untuk ekosistem modern.
           Bukan cuma template biasa — ini adalah fondasi production-ready yang sudah menyelesaikan
           semua setup yang biasanya bikin molor.
         </p>
@@ -64,7 +64,7 @@ export default function AboutPage() {
       <Separator />
 
       <div className="space-y-6">
-        <h2 className="text-2xl font-bold">Kenapa KilatKoding?</h2>
+        <h2 className="text-2xl font-bold">Kenapa Platform Ini?</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {values.map((v) => (
             <Card key={v.title} className="border-border/50">
@@ -105,30 +105,20 @@ export default function AboutPage() {
       <Separator />
 
       <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Dibikin oleh Galih Pratama</h2>
+        <h2 className="text-2xl font-bold">Dibangun oleh Mikail Nurwahid</h2>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          Developer dan builder yang udah terlalu sering stuck di setup payment gateway, konfigurasi
-          email, dan bikin landing page dari nol. KilatKoding adalah solusi yang pengen gue kasih ke
-          developer Indonesia lainnya supaya nggak ngulang masalah yang sama.
+          Software Engineer Fullstack Mobile App yang memanfaatkan AI-Augmented workflow untuk
+          mengembangkan aplikasi secara cepat, terstruktur, dan teruji.
         </p>
         <div className="flex gap-3">
           <Link
-            href="https://twitter.com/galpratama"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Twitter className="h-4 w-4" />
-            @galpratama
-          </Link>
-          <Link
-            href="https://github.com/galpratama"
+            href="https://github.com/Michaelo7710"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             <Github className="h-4 w-4" />
-            galpratama
+            GitHub
           </Link>
         </div>
       </div>

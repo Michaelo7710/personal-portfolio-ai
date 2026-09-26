@@ -113,7 +113,7 @@ export function WaitlistPageClient({
               Segera Hadir
             </Badge>
             <h1 className="text-4xl font-bold tracking-tight">
-              KilatKoding sedang disiapkan.
+              Fitur baru sedang disiapkan.
             </h1>
             <p className="text-muted-foreground text-lg">
               Daftar sekarang dan dapatkan{" "}
@@ -147,7 +147,7 @@ export function WaitlistPageClient({
               <div className="text-2xl">🎉</div>
               <p className="font-semibold">Kamu sudah terdaftar!</p>
               <p className="text-sm text-muted-foreground">
-                Kami akan kirim email saat KilatKoding resmi launch. Stay tuned!
+                Kami akan kirim email saat platform resmi launch. Stay tuned!
               </p>
             </div>
           ) : (

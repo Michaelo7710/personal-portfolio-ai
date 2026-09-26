@@ -186,7 +186,7 @@ describe("app/api/payments/route", () => {
   });
 
   it("creates Midtrans payments when configured", async () => {
-    process.env.NEXT_PUBLIC_APP_URL = "https://kilatkoding.com";
+    process.env.NEXT_PUBLIC_APP_URL = "https://portfolio-personal-ai.vercel.app";
     process.env.PAYMENT_PROVIDER = "midtrans";
     createSnapTransactionMock.mockResolvedValue("snap-token");
     mockAuthenticatedClient();
@@ -209,7 +209,7 @@ describe("app/api/payments/route", () => {
         items: [
           {
             id: "pro-monthly",
-            name: "KilatKoding Pro - 1 Bulan",
+            name: "Portfolio Pro - 1 Bulan",
             price: 99_000,
             quantity: 1,
           },
@@ -224,13 +224,13 @@ describe("app/api/payments/route", () => {
     expect(syncExpiredSubscriptionMock).toHaveBeenCalledWith("user-1");
     expect(createSnapTransactionMock).toHaveBeenCalledWith({
       amount: 99_000,
-      callbackUrl: "https://kilatkoding.com/order/KK-1710547200000-DEADBEEF",
+      callbackUrl: "https://portfolio-personal-ai.vercel.app/order/KK-1710547200000-DEADBEEF",
       customerEmail: "member@example.com",
       customerName: "member",
       items: [
         {
           id: "pro-monthly",
-          name: "KilatKoding Pro - 1 Bulan",
+          name: "Portfolio Pro - 1 Bulan",
           price: 99_000,
           quantity: 1,
         },
@@ -271,7 +271,7 @@ describe("app/api/payments/route", () => {
       customerName: "member",
       items: [
         {
-          name: "KilatKoding Pro - 1 Bulan",
+          name: "Portfolio Pro - 1 Bulan",
           price: 99_000,
           quantity: 1,
         },

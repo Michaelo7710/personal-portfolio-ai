@@ -10,7 +10,7 @@ describe("lib/portfolio", () => {
     const slugs = studies.map((s) => s.slug);
     expect(slugs).toContain("wallet-app");
     expect(slugs).toContain("quran-app");
-    expect(slugs).toContain("edu-sim");
+    expect(slugs).toContain("personal-portfolio-ai");
 
     for (const study of studies) {
       expect(study.id).toBeTruthy();
@@ -44,16 +44,16 @@ describe("lib/portfolio", () => {
     expect(result?.meta.metrics.some((m) => m.value.includes("Offline-First"))).toBe(true);
   });
 
-  it("retrieves quran-app and edu-sim case studies correctly", () => {
+  it("retrieves quran-app and personal-portfolio-ai case studies correctly", () => {
     const quran = getCaseStudyBySlug("quran-app");
     expect(quran).not.toBeNull();
     expect(quran?.meta.title).toBe("QuranApp (Digital Mushaf)");
     expect(quran?.content).toContain("WCAG 2.1 AA");
 
-    const eduSim = getCaseStudyBySlug("edu-sim");
-    expect(eduSim).not.toBeNull();
-    expect(eduSim?.meta.title).toBe("Sensei Edu-Sim Suite");
-    expect(eduSim?.content).toContain("Zero-Eval");
+    const portfolio = getCaseStudyBySlug("personal-portfolio-ai");
+    expect(portfolio).not.toBeNull();
+    expect(portfolio?.meta.title).toContain("Personal Portfolio");
+    expect(portfolio?.content).toContain("Gemini");
   });
 
   it("returns null when querying a nonexistent slug", () => {

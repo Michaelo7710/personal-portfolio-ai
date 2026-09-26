@@ -3,8 +3,8 @@ import { Suspense } from "react";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Auth Error — KilatKoding",
-  description: "Terjadi kendala saat proses autentikasi KilatKoding.",
+  title: "Auth Error — Mikail Nurwahid Portfolio",
+  description: "Terjadi kendala saat proses autentikasi portfolio.",
   path: "/auth/error",
   noIndex: true,
 });

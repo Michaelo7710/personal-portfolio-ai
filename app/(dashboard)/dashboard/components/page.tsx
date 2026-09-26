@@ -4,7 +4,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ComponentShowcase } from "@/components/dashboard/showcase/component-showcase";
 
 export const metadata = createMetadata({
-  title: "Component Showcase — KilatKoding",
+  title: "Component Showcase — Mikail Nurwahid Portfolio",
   description: "Showcase semua komponen dashboard dan admin.",
   path: "/dashboard/components",
   noIndex: true,

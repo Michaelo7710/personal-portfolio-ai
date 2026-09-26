@@ -1,4 +1,4 @@
-# Setup Dan Pengembangan
+﻿# Setup Dan Pengembangan
 
 ## Prasyarat
 
@@ -51,7 +51,7 @@ MIDTRANS_SERVER_KEY=server-key-midtrans-kamu
 NEXT_PUBLIC_MIDTRANS_CLIENT_KEY=client-key-midtrans-kamu
 
 RESEND_API_KEY=api-key-resend-kamu
-EMAIL_FROM=KilatKoding <noreply@domainmu.com>
+EMAIL_FROM=Portfolio <noreply@domainmu.com>
 
 DOKU_CLIENT_ID=client-id-doku-kamu
 DOKU_SECRET_KEY=secret-key-doku-kamu
@@ -75,7 +75,7 @@ Catatan:
 - `SUPABASE_SERVICE_ROLE_KEY` dibutuhkan untuk write webhook, update profil, lookup order, dan reporting admin
 - `MIDTRANS_SERVER_KEY` hanya untuk server; jangan pakai prefix `NEXT_PUBLIC_`
 - `NEXT_PUBLIC_MIDTRANS_CLIENT_KEY` adalah publishable key untuk membuka Snap popup di frontend
-- `EMAIL_FROM` defaultnya `KilatKoding <noreply@kilatkoding.com>` kalau tidak diset; sesuaikan dengan domain pengirim yang sudah diverifikasi di Resend
+- `EMAIL_FROM` defaultnya `Portfolio <noreply@Portfolio.com>` kalau tidak diset; sesuaikan dengan domain pengirim yang sudah diverifikasi di Resend
 - `DOKU_CLIENT_ID` dan `DOKU_SECRET_KEY` hanya untuk server; jangan pakai prefix `NEXT_PUBLIC_`
 - `ADMIN_EMAILS` sekarang hanya daftar bootstrap; user yang cocok akan di-upsert ke `user_roles` sebagai `admin` saat login pertama
 - Variabel AI bersifat opsional; fitur AI nonaktif kalau key belum diset

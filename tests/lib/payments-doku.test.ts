@@ -32,7 +32,7 @@ describe("lib/payments/doku", () => {
     const { createDokuPayment } = await import("@/lib/payments/doku");
     const result = await createDokuPayment({
       amount: 200_000,
-      callbackUrl: "https://kilatkoding.com/payment/callback",
+      callbackUrl: "https://portfolio-personal-ai.vercel.app/payment/callback",
       customerEmail: "member@example.com",
       customerName: "Member",
       items: [
@@ -81,7 +81,7 @@ describe("lib/payments/doku", () => {
       },
       order: {
         amount: 200_000,
-        callback_url: "https://kilatkoding.com/payment/callback",
+        callback_url: "https://portfolio-personal-ai.vercel.app/payment/callback",
         currency: "IDR",
         invoice_number: "KK-ORDER-1",
       },
@@ -106,7 +106,7 @@ describe("lib/payments/doku", () => {
     await expect(
       createDokuPayment({
         amount: 100_000,
-        callbackUrl: "https://kilatkoding.com/payment/callback",
+        callbackUrl: "https://portfolio-personal-ai.vercel.app/payment/callback",
         customerEmail: "member@example.com",
         customerName: "Member",
         orderId: "KK-ORDER-1",

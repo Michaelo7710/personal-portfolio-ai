@@ -24,8 +24,8 @@ export async function POST(req: Request) {
   }
 
   const resendKey = process.env.RESEND_API_KEY;
-  const emailFrom = process.env.EMAIL_FROM ?? "KilatKoding <noreply@kilatkoding.com>";
-  const emailTo = process.env.CONTACT_EMAIL ?? process.env.EMAIL_FROM ?? "hello@kilatkoding.com";
+  const emailFrom = process.env.EMAIL_FROM ?? "Mikail Nurwahid <mikailnurwahid01@gmail.com>";
+  const emailTo = process.env.CONTACT_EMAIL ?? process.env.EMAIL_FROM ?? "mikailnurwahid01@gmail.com";
 
   const parsed = contactRequestSchema.safeParse(await req.json());
   if (!parsed.success) {
@@ -42,7 +42,7 @@ export async function POST(req: Request) {
     from: emailFrom,
     to: emailTo,
     replyTo: email,
-    subject: `Pesan baru dari ${name} — KilatKoding`,
+    subject: `Pesan baru dari ${name} — Portfolio Mikail Nurwahid`,
     text: `Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`,
   });
 

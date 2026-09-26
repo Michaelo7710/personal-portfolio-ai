@@ -18,7 +18,7 @@ import { PaymentsTable } from "@/components/dashboard/payments-table";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Dashboard — KilatKoding",
+  title: "Dashboard — Mikail Nurwahid Portfolio",
   description: "Ringkasan akun, paket aktif, dan riwayat pembayaran kamu.",
   path: "/dashboard",
   noIndex: true,

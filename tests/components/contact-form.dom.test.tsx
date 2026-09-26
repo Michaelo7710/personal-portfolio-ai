@@ -36,7 +36,7 @@ describe("components/contact-form", () => {
     await user.type(screen.getByLabelText("Email"), "galih@example.com");
     await user.type(
       screen.getByLabelText("Pesan"),
-      "Saya ingin bertanya tentang KilatKoding."
+      "Saya ingin bertanya tentang portfolio ini."
     );
     await user.click(screen.getByRole("button", { name: "Kirim Pesan" }));
 

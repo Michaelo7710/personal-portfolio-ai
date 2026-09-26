@@ -5,9 +5,9 @@ import { roadmapPageConfig, type RoadmapStatus } from "@/config/roadmap";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Roadmap — KilatKoding",
+  title: "Roadmap — Mikail Nurwahid Portfolio",
   description:
-    "Rencana pengembangan KilatKoding ke depan. Lihat fitur yang sedang dibangun dan yang akan datang.",
+    "Rencana pengembangan ke depan. Lihat fitur yang sedang dibangun dan yang akan datang.",
   path: "/roadmap",
 });
 

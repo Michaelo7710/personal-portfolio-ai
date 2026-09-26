@@ -1,8 +1,8 @@
-# Supabase Dan Auth
+﻿# Supabase Dan Auth
 
 ## Ringkasan
 
-KilatKoding menggunakan Supabase untuk autentikasi, manajemen session, dan database. Sistem auth mendukung tiga metode login:
+Portfolio menggunakan Supabase untuk autentikasi, manajemen session, dan database. Sistem auth mendukung tiga metode login:
 
 - **Email/password** — alur kredensial standar
 - **Google OAuth** — login satu klik via Google

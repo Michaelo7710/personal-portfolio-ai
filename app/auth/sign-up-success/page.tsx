@@ -8,7 +8,7 @@ import {
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Pendaftaran Berhasil — KilatKoding",
+  title: "Pendaftaran Berhasil — Mikail Nurwahid Portfolio",
   description: "Pendaftaran berhasil. Lanjutkan dengan verifikasi email kamu.",
   path: "/auth/sign-up-success",
   noIndex: true,

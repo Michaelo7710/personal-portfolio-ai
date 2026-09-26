@@ -15,8 +15,8 @@ export const faqs = [
     a: "Paket Basic untuk 1 proyek pribadi. Paket Pro ke atas bisa dipakai untuk unlimited proyek termasuk proyek klien komersial.",
   },
   {
-    q: "Apa bedanya KilatKoding dengan template biasa?",
-    a: "KilatKoding bukan sekadar template visual. Ini adalah production-ready boilerplate dengan auth, payment gateway lokal, email transaksional, database schema, dan dokumentasi lengkap — siap dipakai langsung tanpa konfigurasi berhari-hari.",
+    q: "Apa bedanya boilerplate ini dengan template biasa?",
+    a: "Boilerplate ini bukan sekadar template visual. Ini adalah production-ready boilerplate dengan auth, payment gateway lokal, email transaksional, database schema, dan dokumentasi lengkap — siap dipakai langsung tanpa konfigurasi berhari-hari.",
   },
   {
     q: "Payment gateway apa yang didukung?",

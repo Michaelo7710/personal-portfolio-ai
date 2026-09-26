@@ -24,8 +24,8 @@ import { formatDateInJakarta } from "@/lib/format/date";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Pengaturan — KilatKoding",
-  description: "Kelola akun dan password KilatKoding kamu.",
+  title: "Pengaturan — Mikail Nurwahid Portfolio",
+  description: "Kelola akun dan password portfolio kamu.",
   path: "/dashboard/settings",
   noIndex: true,
 });

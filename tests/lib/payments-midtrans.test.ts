@@ -28,7 +28,7 @@ describe("lib/payments/midtrans", () => {
     const { createSnapTransaction } = await import("@/lib/payments/midtrans");
     const token = await createSnapTransaction({
       amount: 150_000,
-      callbackUrl: "https://kilatkoding.com/payment/callback",
+      callbackUrl: "https://portfolio-personal-ai.vercel.app/payment/callback",
       customerEmail: "member@example.com",
       customerName: "member",
       enabledPayments: ["gopay"],
@@ -51,7 +51,7 @@ describe("lib/payments/midtrans", () => {
     });
     expect(createTransactionTokenMock).toHaveBeenCalledWith({
       callbacks: {
-        finish: "https://kilatkoding.com/payment/callback",
+        finish: "https://portfolio-personal-ai.vercel.app/payment/callback",
       },
       customer_details: {
         email: "member@example.com",

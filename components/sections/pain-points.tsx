@@ -28,7 +28,7 @@ export function PainPointsSection() {
             variant="outline"
             className="marketing-eyebrow text-destructive border-destructive/30"
           >
-            Tanpa KilatKoding
+            Tanpa Boilerplate Kami
           </Badge>
           <h2 className="marketing-heading">
             Ini yang bakal kamu hadapi kalau setup dari nol.
@@ -48,7 +48,7 @@ export function PainPointsSection() {
                   Waktu Kebuang
                 </TableHead>
                 <TableHead className="text-right font-semibold text-primary w-28">
-                  KilatKoding
+                  Solusi Kami
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -80,7 +80,7 @@ export function PainPointsSection() {
         </div>
 
         <p className="marketing-note mt-6 text-center italic text-sm">
-          Capek? Sama. Makanya KilatKoding dibuat.
+          Capek? Sama. Makanya solusi ini kami bangun.
         </p>
       </div>
     </section>

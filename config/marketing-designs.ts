@@ -7,7 +7,7 @@ export const marketingDesignPresets = [
     family: "baseline",
     defaultTheme: "light",
     availableThemes: availableMarketingThemes,
-    description: "Baseline KilatKoding look with soft depth and modern SaaS polish.",
+    description: "Baseline portfolio look with soft depth and modern SaaS polish.",
   },
   {
     id: "monochrome",

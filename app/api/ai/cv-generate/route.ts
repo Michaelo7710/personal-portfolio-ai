@@ -11,6 +11,7 @@ import {
 import {
   buildAtsCvPrompt,
   generateDeterministicAtsCv,
+  parseLlmStructuredCv,
   type AtsCvGenerationResult,
 } from "@/lib/ai/ats-prompt";
 
@@ -106,25 +107,21 @@ export async function POST(request: NextRequest) {
           ],
         });
 
-        if (aiResponse.text && aiResponse.text.trim().length > 100) {
+        if (aiResponse.text && aiResponse.text.trim().length > 20) {
           const fallbackReference = generateDeterministicAtsCv({
             jobDescription,
             targetRole,
           });
 
-          const result: AtsCvGenerationResult = {
-            markdown: aiResponse.text,
-            targetRole: targetRole || fallbackReference.targetRole,
-            matchedKeywords: fallbackReference.matchedKeywords,
-            atsScore: Math.min(99, fallbackReference.atsScore + 2),
-            provider: "google",
-            generatedAt: new Date().toISOString(),
-          };
+          const structuredResult = parseLlmStructuredCv(
+            aiResponse.text,
+            fallbackReference
+          );
 
           return applyRateLimitHeaders(
             NextResponse.json({
               success: true,
-              ...result,
+              ...structuredResult,
             }),
             rateLimit
           );

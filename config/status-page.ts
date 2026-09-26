@@ -19,7 +19,7 @@ export const serviceStatusPageConfig = {
   ],
   lastUpdated: "16 Maret 2026, 09:00 WIB",
   services: [
-    { name: "Website", description: "kilatkoding.com", status: "operational" as ServiceStatus },
+    { name: "Website", description: "portfolio-personal-ai.vercel.app", status: "operational" as ServiceStatus },
     { name: "Autentikasi", description: "Login, register, OAuth", status: "operational" as ServiceStatus },
     { name: "Database", description: "Supabase Postgres", status: "operational" as ServiceStatus },
     { name: "Email", description: "Resend transactional email", status: "operational" as ServiceStatus },

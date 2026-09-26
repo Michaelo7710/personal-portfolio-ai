@@ -1,4 +1,4 @@
-# Architecture
+﻿# Architecture
 
 ## Top-Level Structure
 
@@ -44,8 +44,8 @@
 
 | Route | File | Purpose |
 | --- | --- | --- |
-| `/` | `app/(marketing)/page.tsx` | KilatKoding landing page |
-| `/about` | `app/(marketing)/about/page.tsx` | About KilatKoding |
+| `/` | `app/(marketing)/page.tsx` | Portfolio landing page |
+| `/about` | `app/(marketing)/about/page.tsx` | About Portfolio |
 | `/affiliates` | `app/(marketing)/affiliates/page.tsx` | Affiliates program |
 | `/blog` | `app/(marketing)/blog/page.tsx` | MDX blog listing |
 | `/blog/[slug]` | `app/(marketing)/blog/[slug]/page.tsx` | MDX blog post detail |

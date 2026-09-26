@@ -1,4 +1,4 @@
-# Arsitektur
+﻿# Arsitektur
 
 ## Struktur Tingkat Atas
 
@@ -44,8 +44,8 @@
 
 | Route | File | Tujuan |
 | --- | --- | --- |
-| `/` | `app/(marketing)/page.tsx` | Halaman landing KilatKoding |
-| `/about` | `app/(marketing)/about/page.tsx` | Tentang KilatKoding |
+| `/` | `app/(marketing)/page.tsx` | Halaman landing Portfolio |
+| `/about` | `app/(marketing)/about/page.tsx` | Tentang Portfolio |
 | `/affiliates` | `app/(marketing)/affiliates/page.tsx` | Program afiliasi |
 | `/blog` | `app/(marketing)/blog/page.tsx` | Daftar blog MDX |
 | `/blog/[slug]` | `app/(marketing)/blog/[slug]/page.tsx` | Detail post blog MDX |

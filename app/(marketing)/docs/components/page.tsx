@@ -11,7 +11,7 @@ import { DashboardTab } from "@/components/docs/tab-dashboard";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Komponen UI — KilatKoding",
+  title: "Komponen UI — Mikail Nurwahid Portfolio",
   description: "Referensi lengkap semua komponen shadcn/ui yang tersedia.",
   path: "/docs/components",
 });

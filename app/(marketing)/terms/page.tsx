@@ -3,8 +3,8 @@ import { siteConfig } from "@/config/site";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Syarat & Ketentuan — KilatKoding",
-  description: "Syarat dan ketentuan penggunaan layanan KilatKoding.",
+  title: "Syarat & Ketentuan — Mikail Nurwahid Portfolio",
+  description: "Syarat dan ketentuan penggunaan layanan portfolio.",
   path: "/terms",
 });
 

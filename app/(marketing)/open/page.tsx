@@ -7,9 +7,9 @@ import { openStartupConfig } from "@/config/open-startup";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Open Startup — KilatKoding",
+  title: "Open Metrics — Mikail Nurwahid Portfolio",
   description:
-    "KilatKoding adalah open startup. Kami berbagi metrik bisnis secara transparan: MRR, pengguna, pendapatan.",
+    "Transparansi metrik dan performa teknis secara terbuka.",
   path: "/open",
 });
 
@@ -43,8 +43,8 @@ export default function OpenPage() {
           Kami transparan soal angka.
         </h1>
         <p className="text-muted-foreground leading-relaxed">
-          KilatKoding adalah open startup. Kami percaya transparansi membangun kepercayaan.
-          Semua metrik di sini diperbarui setiap bulan.
+          Platform ini mengedepankan keterbukaan dan transparansi. Kami percaya transparansi membangun kepercayaan.
+          Semua metrik di sini diperbarui secara berkala.
         </p>
         <p className="text-xs text-muted-foreground">
           Terakhir diperbarui: {openStartupConfig.lastUpdated}

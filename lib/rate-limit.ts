@@ -68,16 +68,16 @@ const AI_RATE_LIMITS: Record<Plan, Omit<RateLimitConfig, "key">> = {
 };
 
 declare global {
-  var __kilatkodingRateLimitStore: Map<string, RateLimitBucket> | undefined;
-  var __kilatkodingRateLimitCleanupAt: number | undefined;
+  var __portfolioRateLimitStore: Map<string, RateLimitBucket> | undefined;
+  var __portfolioRateLimitCleanupAt: number | undefined;
 }
 
 function getRateLimitStore() {
-  if (!globalThis.__kilatkodingRateLimitStore) {
-    globalThis.__kilatkodingRateLimitStore = new Map<string, RateLimitBucket>();
+  if (!globalThis.__portfolioRateLimitStore) {
+    globalThis.__portfolioRateLimitStore = new Map<string, RateLimitBucket>();
   }
 
-  return globalThis.__kilatkodingRateLimitStore;
+  return globalThis.__portfolioRateLimitStore;
 }
 
 function pruneExpiredBuckets(now: number) {
@@ -207,13 +207,13 @@ async function cleanupExpiredRateLimitBuckets() {
   }
 
   const now = Date.now();
-  const lastCleanupAt = globalThis.__kilatkodingRateLimitCleanupAt ?? 0;
+  const lastCleanupAt = globalThis.__portfolioRateLimitCleanupAt ?? 0;
 
   if (now - lastCleanupAt < RATE_LIMIT_CLEANUP_INTERVAL_MS) {
     return;
   }
 
-  globalThis.__kilatkodingRateLimitCleanupAt = now;
+  globalThis.__portfolioRateLimitCleanupAt = now;
 
   try {
     const adminClient = createAdminClient();
@@ -269,5 +269,5 @@ export function createRateLimitResponse(rateLimit: RateLimitResult, error: strin
 
 export function resetRateLimitStore() {
   rateLimitStore.clear();
-  globalThis.__kilatkodingRateLimitCleanupAt = 0;
+  globalThis.__portfolioRateLimitCleanupAt = 0;
 }
